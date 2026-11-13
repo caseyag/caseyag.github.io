@@ -1,0 +1,63 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "**/*.qmd"
+    - "!docs/"
+  resources:
+    - "resume/*.pdf"
+    - "images/*"
+    - "work/*/demo/**"
+
+website:
+  title: "Casey Aguilar-Gervase"
+  site-url: "https://caseyag.github.io"
+  description: "Data scientist and R Shiny specialist. Data deserves apps people actually want to use."
+  search: false
+  open-graph:
+    image: /images/social-card.png
+    image-alt: "Casey Aguilar-Gervase, Data Scientist & R Shiny Specialist"
+  twitter-card:
+    card-style: summary_large_image
+    image: /images/social-card.png
+    image-alt: "Casey Aguilar-Gervase, Data Scientist & R Shiny Specialist"
+  navbar:
+    title: "caseyag"
+    right:
+      - text: Work
+        href: work/index.qmd
+      - text: Talks
+        href: talks/index.qmd
+      - text: Resume
+        href: resume/index.qmd
+      - text: About
+        href: "index.qmd#about"
+      - icon: github
+        href: https://github.com/caseyag
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/casey-aguilar-gervase/
+        aria-label: LinkedIn
+  page-footer:
+    left: "© 2026 Casey Aguilar-Gervase"
+    right:
+      - text: "97caguilar@gmail.com"
+        href: "mailto:97caguilar@gmail.com"
+      - icon: linkedin
+        href: https://www.linkedin.com/in/casey-aguilar-gervase/
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/caseyag
+        aria-label: GitHub
+
+format:
+  html:
+    date-format: "MMMM YYYY"
+    # Light only for now. To bring dark mode back, use
+    #   theme: {light: [default, theme.scss, theme-rules.scss], dark: [default, theme-dark.scss, theme-rules.scss]}
+    # and add `respect-user-color-scheme: true`.
+    theme: [default, theme.scss, theme-rules.scss]
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true

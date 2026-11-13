@@ -1,0 +1,12 @@
+---
+title: "Work"
+subtitle: "Shiny apps and demos, with the design decisions behind each one."
+listing:
+  contents: "*/index.qmd"
+  type: grid
+  grid-columns: 2
+  sort: "order"
+  categories: false
+  image-height: auto
+  fields: [image, title, description, categories]
+---

@@ -1,0 +1,9 @@
+/.quarto/
+/_site/
+.DS_Store
+.superpowers/
+
+**/*.quarto_ipynb
+
+# Private working notes live in ~/code/caseyag.github.io-notes
+docs/

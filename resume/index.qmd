@@ -1,0 +1,158 @@
+---
+pagetitle: "Resume · Casey Aguilar-Gervase"
+description: "Resume of Casey Aguilar-Gervase, data scientist and R Shiny specialist."
+page-layout: custom
+---
+
+::: {#main role="main"}
+
+::: {.hero .hero-compact}
+::: {.wrap .hero-foot}
+::: {.resume-id}
+[[//]{aria-hidden="true"} resume]{.mono-label}
+
+# Casey Aguilar-Gervase
+
+[Data Scientist & R Shiny Specialist]{.resume-title}
+
+[Indianapolis, IN · [97caguilar@gmail.com](mailto:97caguilar@gmail.com) · [LinkedIn [↗]{aria-hidden="true"}](https://www.linkedin.com/in/casey-aguilar-gervase/)]{.mono-label}
+:::
+
+[Download PDF](Casey-Aguilar-Gervase-Resume.pdf){.btn-cta}
+:::
+:::
+
+::: {.wrap .page-section}
+::: {.section-head}
+## Experience
+:::
+
+::: {.role}
+::: {.role-meta}
+2026 – Present
+
+**Contract**
+:::
+::: {.role-body}
+### Data Scientist (Contractor)
+:::
+:::
+
+::: {.role}
+::: {.role-meta}
+2026
+
+**Atorus Research**
+:::
+::: {.role-body}
+### Principal Shiny Developer
+
+- Led multiple projects and collaborated with leadership to influence business and engineering direction.
+- Turned business needs into code architecture, created viable project timelines, and developed new methodologies and tools.
+- Met with clients regularly, delegated work across the team, and mentored junior developers.
+- Owned project outcomes and client satisfaction across multiple concurrent development efforts.
+:::
+:::
+
+::: {.role}
+::: {.role-meta}
+2023 – 2026
+
+**Atorus Research**
+:::
+::: {.role-body}
+### Senior Shiny Developer
+
+- Led end-to-end wireframing and UI/UX design for Shiny applications, translating complex data requirements into intuitive, visually polished interfaces.
+- Led multi-developer projects, breaking complex work into clear deliverables and keeping development aligned across teams.
+- Developed advanced Shiny applications using modular architecture, dynamic user interfaces, and scalable design patterns.
+- Mentored junior developers and delivered demos and technical walkthroughs to clients and internal teams.
+:::
+:::
+
+::: {.role}
+::: {.role-meta}
+2022 – 2023
+
+**Atorus Research**
+:::
+::: {.role-body}
+### Data Visualization Engineer / Data Scientist
+
+- Conducted user research and turned findings into wireframes, prototypes, style guides, and user flows.
+- Presented and defended design decisions grounded in color theory, visual hierarchy, and user psychology.
+- Supported multiple simultaneous data visualization projects, balancing design innovation with technical feasibility.
+:::
+:::
+
+::: {.role}
+::: {.role-meta}
+2021 – 2022
+
+**Nuventra Pharma Sciences**
+:::
+::: {.role-body}
+### Associate, Programming & Biostatistics
+
+- Programmed data manipulation, analysis, and visualization workflows in R for PK, PD, and PK/PD studies.
+- Developed CDISC-compliant datasets, tables, listings, and figures for clinical pharmacology reports.
+- Collaborated with pharmacokineticists and scientific leads to design, validate, and deliver analyses.
+:::
+:::
+
+::: {.role}
+::: {.role-meta}
+2020 – 2021
+
+**Nuventra Pharma Sciences**
+:::
+::: {.role-body}
+### Specialist, Programming
+
+- Provided R coding support to pharmacokineticists for PK, PD, toxicokinetic, and population PK analyses in drug development.
+- Built code to generate summary PK and PD tables, listings, and graphs from clinical and nonclinical data.
+- Implemented CDISC standards (SDTM, ADaM, SEND) to clean and summarize study data.
+:::
+:::
+
+::: {.resume-cols}
+::: {.work-on}
+## Skills
+
+shiny
+: Shiny, golem, bslib, R6, HTMLWidgets
+
+ux
+: UI/UX design, wireframes, prototypes
+
+css
+: HTML/CSS, D3, R Markdown, graphic design
+
+code
+: R (R6, functional programming), Git, Python basics
+
+clinical
+: CDISC, PK/PD, TLFs
+:::
+
+::: {.resume-col}
+## Education
+
+**American University**, 2015 – 2019\
+Biostatistics MS\
+Applied Statistics BS, Graphic Design minor
+
+**Division I Women's Lacrosse**\
+Team Captain, 2017–2018 season
+:::
+
+::: {.resume-col}
+## Speaking
+
+[posit::conf(2025)]{.mono-label}\
+**[Design of Everyday Apps](../talks/design-of-everyday-apps/index.qmd)**
+:::
+:::
+:::
+
+:::

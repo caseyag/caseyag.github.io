@@ -1,0 +1,12 @@
+---
+title: "Talks"
+subtitle: "Conference talks on designing data apps people enjoy using."
+listing:
+  contents: "*/index.qmd"
+  type: grid
+  grid-columns: 2
+  sort: "date desc"
+  categories: false
+  image-height: auto
+  fields: [image, date, title, description, categories]
+---

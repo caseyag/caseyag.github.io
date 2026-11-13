@@ -1,0 +1,51 @@
+---
+title: "Design of Everyday Apps"
+subtitle: "posit::conf(2025)"
+description: "Our posit::conf(2025) talk: a working client Shiny app, redesigned on stage through layout, color, typography and components."
+date: 2025-09-01
+image: thumbnail.png
+image-alt: "Before and after screenshots of the app redesign, side by side"
+categories: [talk, ux, shiny]
+featured: true
+open-graph:
+  image-alt: "Before and after screenshots of the app redesign, side by side"
+twitter-card:
+  image-alt: "Before and after screenshots of the app redesign, side by side"
+---
+
+In our posit::conf(2025) talk, we took a working client Shiny app and rebuilt it step by step on stage, one design lever at a time.
+
+::: {.cta-row}
+[View the code on GitHub](https://github.com/caseyag/Posit-Conf-25){.btn-cta}
+:::
+
+## The problem
+
+The client's Shiny app worked, but it was hard to use. Navigation was inconsistent, color competed for attention everywhere, and tables and actions gave users little guidance.
+
+## Before and after
+
+These screens use the public UX survey dataset from the talk.
+
+::: {layout-ncol=2}
+![Before: a dark dashboard sidebar and loud, solid-color boxes.](before-01-overview.png){fig-alt="Original app overview with a dark sidebar and solid color value boxes"}
+
+![After: a clean bslib layout, white cards and color only where it matters.](after-01-overview.png){fig-alt="Redesigned app overview with a light layout and white summary cards"}
+:::
+
+::: {layout-ncol=2}
+![Before: the data table was hidden in a collapsed box at the bottom of the page.](before-02-data-table.png){fig-alt="Original app with the data table in a box at the bottom of the page"}
+
+![After: the data gets its own tab, with Handsome Table filters.](after-02-data-table.png){fig-alt="Redesigned app with a Data Review tab showing a filterable table"}
+:::
+
+## The four design levers
+
+1. **Layout.** A cohesive experience starts with a clear structure: intuitive user journeys, consistent flow and streamlined grid layouts that make navigation familiar.
+2. **Color.** The original app followed brand guidelines. The redesign uses color on purpose, as an accent that highlights key information and actions without overwhelming the user.
+3. **Typography.** One client font, with hierarchy built from size and weight to guide attention and improve readability.
+4. **Components.** [Handsome Table](../../work/handsome-table/index.qmd), a custom Handsontable wrapper, for friendlier tables; tooltips and popovers for extra detail without clutter; and visual feedback for every action, with a confirmation step for serious ones like deletions.
+
+## Code and apps
+
+The original app and the redesigned version are in the talk repo. Each step of the talk has its own branch.

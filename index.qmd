@@ -1,0 +1,149 @@
+---
+pagetitle: "Casey Aguilar-Gervase · Data Scientist & R Shiny Specialist"
+description: "Data deserves apps people actually want to use. Data scientist and R Shiny specialist in the Indianapolis area."
+page-layout: custom
+listing:
+  id: featured-list
+  contents:
+    - "talks/*/index.qmd"
+    - "work/*/index.qmd"
+  include:
+    featured: true
+  type: grid
+  grid-columns: 2
+  image-height: auto
+  sort: "date desc"
+  fields: [image, title, description, categories]
+---
+
+::: {#main role="main"}
+
+::: {.hero}
+::: {.wrap}
+[[//]{aria-hidden="true"} Casey Aguilar-Gervase · Data Scientist & R Shiny Specialist]{.mono-label}
+
+# Data deserves apps people [actually]{.hl} want to use. {#hero-heading}
+
+::: {.hero-foot}
+I bridge data science and design. I combine advanced R Shiny development with custom HTML/CSS, UX design, and interactive visualization to turn proof-of-concept apps into production-ready tools people enjoy using.
+
+::: {.cta-row}
+[See my work [→]{aria-hidden="true"}](work/index.qmd){.btn-cta}
+[Download resume](resume/Casey-Aguilar-Gervase-Resume.pdf){.btn-outline}
+:::
+:::
+:::
+:::
+
+::: {.wrap}
+```{=html}
+<nav class="tiles" aria-label="Sections">
+  <a class="tile" href="work/index.html">
+    <span class="tile-path" aria-hidden="true">/work</span>
+    <span class="tile-name">Apps</span>
+    <span class="tile-desc">Live Shiny apps and demos, with the design decisions behind each one.</span>
+  </a>
+  <a class="tile" href="talks/index.html">
+    <span class="tile-path" aria-hidden="true">/talks</span>
+    <span class="tile-name">Talks</span>
+    <span class="tile-desc">Latest: <em>Design of Everyday Apps</em>, posit::conf(2025).</span>
+  </a>
+  <a class="tile" href="resume/index.html">
+    <span class="tile-path" aria-hidden="true">/resume</span>
+    <span class="tile-name">Resume</span>
+    <span class="tile-desc">Experience, skills, and a PDF to download.</span>
+  </a>
+</nav>
+```
+:::
+
+::: {#featured .wrap .page-section}
+::: {.section-head}
+## Featured {#featured-heading}
+
+[All work [→]{aria-hidden="true"}](work/index.qmd)
+:::
+
+::: {#featured-list}
+:::
+:::
+
+::: {#about .wrap .page-section}
+::: {.section-head}
+## About {#about-heading}
+:::
+
+::: {.about}
+```{=html}
+<img class="about-photo" src="images/headshot.jpg" alt="Casey Aguilar-Gervase smiling, with long light-brown hair, against a dark background" width="933" height="1200">
+```
+
+::: {.about-body}
+I'm a contract data scientist and an experienced R Shiny developer based in the Indianapolis area. Before that, I spent several years at Atorus Research leading the design and development of Shiny applications for clinical research, from the first wireframes through modular, production-ready code.
+
+My background is a mix that shows up in my work: I studied graphic design alongside statistics, and I've spent years writing production code, from clinical programming in R to complex Shiny architecture. I care as much about how an app looks and feels as about how it's built. Data deserves better than dashboards that feel like chores.
+
+::: {.work-on}
+[What I work on]{.mono-label}
+
+shiny
+: Modular apps, golem, bslib, R6
+
+ux
+: User research, wireframes, prototypes, style guides
+
+css
+: Custom HTML/CSS and branded, polished interfaces
+
+clinical
+: CDISC, PK/PD, tables, listings and figures
+:::
+:::
+:::
+
+::: {.dogs}
+[[//]{aria-hidden="true"} off the clock]{.mono-label}
+
+### Meet my coworkers {#dogs-heading}
+
+Mason and Tony work behind the scenes on every project. They attend all my meetings and sleep through most of them.
+
+```{=html}
+<div class="dogs-grid">
+  <figure>
+    <img src="images/dog-mason.jpg" alt="Mason, a black dog with a white muzzle, staring into the camera from beside the couch" width="1200" height="1014" loading="lazy">
+    <figcaption><strong>Mason</strong> reviews my code from very close range.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/dog-tony.jpg" alt="Tony, a tan dog in a blue bandana, lying on a drop cloth next to a freshly painted magenta door" width="900" height="1200" loading="lazy">
+    <figcaption><strong>Tony</strong> supervises every project, DIY and professional.</figcaption>
+  </figure>
+  <figure>
+    <img src="images/dogs-walk.jpg" alt="Casey on a lakeside path at sunset with Mason and Tony on leashes" width="900" height="1200" loading="lazy">
+    <figcaption>The whole team, out for a sunset walk.</figcaption>
+  </figure>
+</div>
+```
+:::
+:::
+
+::: {#contact .contact}
+::: {.wrap .contact-inner}
+::: {.contact-text}
+[[//]{aria-hidden="true"} contact]{.mono-label}
+
+## Let's talk about your project, team, or talk idea. {#contact-heading}
+:::
+
+::: {.contact-actions}
+[97caguilar@gmail.com](mailto:97caguilar@gmail.com){.btn-cta}
+
+::: {.contact-links}
+[LinkedIn [↗]{aria-hidden="true"}](https://www.linkedin.com/in/casey-aguilar-gervase/)
+[GitHub [↗]{aria-hidden="true"}](https://github.com/caseyag)
+:::
+:::
+:::
+:::
+
+:::

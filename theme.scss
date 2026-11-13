@@ -1,0 +1,38 @@
+/*-- scss:defaults --*/
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+
+// Brand tokens, light. Palette from Casey's resume.
+$paper: #FAF7F8;
+$ink: #14090F;
+$sage: #E3ECEA;
+$magenta: #EC1C8C;
+$slate: #46626F;
+$muted: #4A3A43;
+$link: #B8005F;
+$rule-soft: #D5DDDB;
+$on-accent: #14090F;
+$hl-band: $magenta;
+
+// Bootstrap and Quarto mapping
+$body-bg: $paper;
+$body-color: $ink;
+$link-color: $link;
+$navbar-bg: $paper;
+$navbar-fg: $ink;
+$navbar-hl: $link;
+$footer-bg: $paper;
+$footer-fg: $slate;
+$border-color: $ink;
+$blockquote-border-color: $rule-soft;
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+$font-family-monospace: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+$headings-font-family: "Fraunces", Georgia, "Times New Roman", serif;
+$headings-font-weight: 700;
+$code-color: $link;
+$code-bg: $sage;
+$code-block-bg: $sage;
+$pre-color: $ink;
+$text-muted: $slate;
