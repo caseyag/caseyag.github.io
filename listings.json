@@ -1,0 +1,23 @@
+[
+  {
+    "listing": "/talks/index.html",
+    "items": [
+      "/talks/design-of-everyday-apps/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/work/biomarker-explorer/index.html",
+      "/talks/design-of-everyday-apps/index.html"
+    ]
+  },
+  {
+    "listing": "/work/index.html",
+    "items": [
+      "/work/biomarker-explorer/index.html",
+      "/work/report-generator/index.html",
+      "/work/handsome-table/index.html"
+    ]
+  }
+]

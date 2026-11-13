@@ -1,0 +1,198 @@
+[
+  {
+    "objectID": "work/report-generator/index.html",
+    "href": "work/report-generator/index.html",
+    "title": "Report Slide Generator",
+    "section": "",
+    "text": "A redesign of a pharma client’s tool that turns a prepared data file into a ready-to-edit topline report deck. The screenshots use invented data with the plots blurred, and the client’s name and logo are removed."
+  },
+  {
+    "objectID": "work/report-generator/index.html#the-problem",
+    "href": "work/report-generator/index.html#the-problem",
+    "title": "Report Slide Generator",
+    "section": "The problem",
+    "text": "The problem\nThe client already had a working app that could export PowerPoint decks, but it was hard to find your way through, and you couldn’t see the slides until after you exported. You could watch each figure change while configuring it, but checking the finished deck meant exporting, opening the file, then going back into the app to fix anything and exporting again. The app needed a more intuitive flow and a way to review the deck without leaving it."
+  },
+  {
+    "objectID": "work/report-generator/index.html#my-role",
+    "href": "work/report-generator/index.html#my-role",
+    "title": "Report Slide Generator",
+    "section": "My role",
+    "text": "My role\nThe client’s team had built the original app and its figure code. I redesigned it: I reorganized and repurposed their code into a cleaner structure, aligned the app with the client’s brand, designed a new step-by-step workflow, and built the in-browser PowerPoint preview, which was the biggest piece of the project."
+  },
+  {
+    "objectID": "work/report-generator/index.html#how-it-works",
+    "href": "work/report-generator/index.html#how-it-works",
+    "title": "Report Slide Generator",
+    "section": "How it works",
+    "text": "How it works\nThe app is three steps, Upload → Configure → Preview & Export, with a progress indicator that is always visible.\n\n\n\nUpload: one CSV drives the whole deck.\n\n\n\n\n\nConfigure: pick a slide on the left, adjust its plot in the middle, and fine-tune the look on the right.\n\n\n\n\n\nEach figure type has its own controls. This is a waterfall plot.\n\n\n\n\n\nPreview & Export: the real PowerPoint, rendered in the browser before download."
+  },
+  {
+    "objectID": "work/report-generator/index.html#what-i-did",
+    "href": "work/report-generator/index.html#what-i-did",
+    "title": "Report Slide Generator",
+    "section": "What I did",
+    "text": "What I did\n\nA live PowerPoint preview widget. This was the biggest piece. I built a custom htmlwidget so users see the real deck before they download it: officer builds the .pptx on the server, the file goes to the browser, and a client-side renderer draws the slides, which users can reorder. The preview and the download use the same file, so they can’t drift apart, and users can review the deck, go back to adjust a slide and check it again without ever leaving the app.\nA new UX flow. I replaced the original layout with a three-step workflow, Upload → Configure → Preview & Export, with a progress indicator and a consistent three-pane configure screen: slides on the left, the figure in the middle, and its settings on the right.\nBrand alignment. I brought the app’s colors, type and components in line with the client’s brand, so it feels like one of their own tools.\nA reorganized codebase. I repurposed the client’s existing figure code (eleven figure types plus summary tables) into a three-layer module design: a pure plotting function, a tab module that wires settings into it, and a dynamic layer that builds one tab per parameter in the upload. Axis, legend, error-bar and color controls became shared modules, with module-wide defaults that each parameter can override."
+  },
+  {
+    "objectID": "work/handsome-table/index.html",
+    "href": "work/handsome-table/index.html",
+    "title": "Handsome Table",
+    "section": "",
+    "text": "Handsome Table wraps the Handsontable JavaScript library as an htmlwidget, giving R and Shiny apps a spreadsheet-style table with styling that fits the app around it. It powers the data review tab in the app redesign from our posit::conf(2025) talk, Design of Everyday Apps."
+  },
+  {
+    "objectID": "work/handsome-table/index.html#try-it",
+    "href": "work/handsome-table/index.html#try-it",
+    "title": "Handsome Table",
+    "section": "Try it",
+    "text": "Try it"
+  },
+  {
+    "objectID": "work/handsome-table/index.html#what-it-does",
+    "href": "work/handsome-table/index.html#what-it-does",
+    "title": "Handsome Table",
+    "section": "What it does",
+    "text": "What it does\n\nA one-line R API. handsome_table(df) turns a data frame into a table, and handsome_tableOutput() and renderHandsome_table() drop it into Shiny.\nReadable long text. A custom cell renderer truncates notes at 40 characters and expands them on click.\nPer-column filters. Each column has a filter-by-value menu with search.\nFreeze and hide from the header. A right-click menu freezes, unfreezes, hides and unhides columns, and it tracks column order so a freeze can be undone cleanly.\nFits the page. Columns resize, headers wrap, the height follows the window, and the styling matches the app.\n\n\n\n\nThe filter menu: filter by value, search, and select all or clear."
+  },
+  {
+    "objectID": "work/handsome-table/index.html#whats-next",
+    "href": "work/handsome-table/index.html#whats-next",
+    "title": "Handsome Table",
+    "section": "What’s next",
+    "text": "What’s next\n\nEditable cells with dropdown, date and checkbox column types\nTwo-way binding, so edits flow back to R\nValidation rules\nA package release with documentation and tests"
+  },
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Design of Everyday Apps\n\n\n\ntalk\n\nux\n\nshiny\n\n\n\nOur posit::conf(2025) talk: a working client Shiny app, redesigned on stage through layout, color, typography and components.\n\n\n\nSeptember 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "resume/index.html#experience",
+    "href": "resume/index.html#experience",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Experience",
+    "text": "Experience"
+  },
+  {
+    "objectID": "resume/index.html#skills",
+    "href": "resume/index.html#skills",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Skills",
+    "text": "Skills\n\nshiny\n\nShiny, golem, bslib, R6, HTMLWidgets\n\nux\n\nUI/UX design, wireframes, prototypes\n\ncss\n\nHTML/CSS, D3, R Markdown, graphic design\n\ncode\n\nR (R6, functional programming), Git, Python basics\n\nclinical\n\nCDISC, PK/PD, TLFs"
+  },
+  {
+    "objectID": "resume/index.html#education",
+    "href": "resume/index.html#education",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Education",
+    "text": "Education\nAmerican University, 2015 – 2019\nBiostatistics MS\nApplied Statistics BS, Graphic Design minor\nDivision I Women’s Lacrosse\nTeam Captain, 2017–2018 season"
+  },
+  {
+    "objectID": "resume/index.html#speaking",
+    "href": "resume/index.html#speaking",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Speaking",
+    "text": "Speaking\nposit::conf(2025)\nDesign of Everyday Apps"
+  },
+  {
+    "objectID": "index.html#featured-heading",
+    "href": "index.html#featured-heading",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Featured",
+    "text": "Featured\nAll work →"
+  },
+  {
+    "objectID": "index.html#about-heading",
+    "href": "index.html#about-heading",
+    "title": "Casey Aguilar-Gervase",
+    "section": "About",
+    "text": "About"
+  },
+  {
+    "objectID": "index.html#contact-heading",
+    "href": "index.html#contact-heading",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Let’s talk about your project, team, or talk idea.",
+    "text": "Let’s talk about your project, team, or talk idea."
+  },
+  {
+    "objectID": "talks/design-of-everyday-apps/index.html",
+    "href": "talks/design-of-everyday-apps/index.html",
+    "title": "Design of Everyday Apps",
+    "section": "",
+    "text": "In our posit::conf(2025) talk, we took a working client Shiny app and rebuilt it step by step on stage, one design lever at a time."
+  },
+  {
+    "objectID": "talks/design-of-everyday-apps/index.html#the-problem",
+    "href": "talks/design-of-everyday-apps/index.html#the-problem",
+    "title": "Design of Everyday Apps",
+    "section": "The problem",
+    "text": "The problem\nThe client’s Shiny app worked, but it was hard to use. Navigation was inconsistent, color competed for attention everywhere, and tables and actions gave users little guidance."
+  },
+  {
+    "objectID": "talks/design-of-everyday-apps/index.html#before-and-after",
+    "href": "talks/design-of-everyday-apps/index.html#before-and-after",
+    "title": "Design of Everyday Apps",
+    "section": "Before and after",
+    "text": "Before and after\nThese screens use the public UX survey dataset from the talk.\n\n\n\n\n\n\nBefore: a dark dashboard sidebar and loud, solid-color boxes.\n\n\n\n\n\n\n\nAfter: a clean bslib layout, white cards and color only where it matters.\n\n\n\n\n\n\n\n\n\n\n\nBefore: the data table was hidden in a collapsed box at the bottom of the page.\n\n\n\n\n\n\n\nAfter: the data gets its own tab, with Handsome Table filters."
+  },
+  {
+    "objectID": "talks/design-of-everyday-apps/index.html#the-four-design-levers",
+    "href": "talks/design-of-everyday-apps/index.html#the-four-design-levers",
+    "title": "Design of Everyday Apps",
+    "section": "The four design levers",
+    "text": "The four design levers\n\nLayout. A cohesive experience starts with a clear structure: intuitive user journeys, consistent flow and streamlined grid layouts that make navigation familiar.\nColor. The original app followed brand guidelines. The redesign uses color on purpose, as an accent that highlights key information and actions without overwhelming the user.\nTypography. One client font, with hierarchy built from size and weight to guide attention and improve readability.\nComponents. Handsome Table, a custom Handsontable wrapper, for friendlier tables; tooltips and popovers for extra detail without clutter; and visual feedback for every action, with a confirmation step for serious ones like deletions."
+  },
+  {
+    "objectID": "talks/design-of-everyday-apps/index.html#code-and-apps",
+    "href": "talks/design-of-everyday-apps/index.html#code-and-apps",
+    "title": "Design of Everyday Apps",
+    "section": "Code and apps",
+    "text": "Code and apps\nThe original app and the redesigned version are in the talk repo. Each step of the talk has its own branch."
+  },
+  {
+    "objectID": "work/biomarker-explorer/index.html",
+    "href": "work/biomarker-explorer/index.html",
+    "title": "Biomarker Explorer",
+    "section": "",
+    "text": "I designed and built a cross-study biomarker app for a pharma client’s scientists. This public version is a rebuild with invented data, so you can try it."
+  },
+  {
+    "objectID": "work/biomarker-explorer/index.html#the-problem",
+    "href": "work/biomarker-explorer/index.html#the-problem",
+    "title": "Biomarker Explorer",
+    "section": "The problem",
+    "text": "The problem\nWhen a treatment is tested in several studies, each study produces its own list of analytes that went up or down. Scientists needed one place to line those lists up, find the analytes that respond the same way across studies, and look closely at the interesting ones."
+  },
+  {
+    "objectID": "work/biomarker-explorer/index.html#my-role",
+    "href": "work/biomarker-explorer/index.html#my-role",
+    "title": "Biomarker Explorer",
+    "section": "My role",
+    "text": "My role\nI led design and front-end development on a team of four. That covered wireframes and user flows with the scientists, the visual design, and the custom plotting layer."
+  },
+  {
+    "objectID": "work/biomarker-explorer/index.html#what-i-built",
+    "href": "work/biomarker-explorer/index.html#what-i-built",
+    "title": "Biomarker Explorer",
+    "section": "What I built",
+    "text": "What I built\n\nTen custom htmlwidgets: volcano, UpSet, heatmap, correlation, cross-study heatmap, effect size, point-to-point, box, spaghetti and summary-line plots.\nOne shared plotting library. All ten widgets use a small in-house JavaScript library for their theme, tooltips and dependency checks, so they look and behave as one system.\nD3 and Observable Plot, each where it fits. Clustering runs in R, and the D3 heatmaps draw the prepared cells, dendrograms and annotation tracks. Distribution and trend plots use Observable Plot with a custom zoom layer.\nCharts as inputs. The UpSet plot sends mode changes and analyte picks back to Shiny, so a selection in the chart drives the rest of the app."
+  },
+  {
+    "objectID": "work/biomarker-explorer/index.html#the-demo",
+    "href": "work/biomarker-explorer/index.html#the-demo",
+    "title": "Biomarker Explorer",
+    "section": "The demo",
+    "text": "The demo\n\n\n\nThe demo’s landing page walks through the three-step workflow and states that every study, gene and value is invented.\n\n\nEvery study, compound, gene and value in the demo is made up. The original app and its data stay private to the client."
+  },
+  {
+    "objectID": "work/index.html",
+    "href": "work/index.html",
+    "title": "Work",
+    "section": "",
+    "text": "Biomarker Explorer\n\n\n\nshiny\n\nhtmlwidgets\n\nd3\n\nux\n\n\n\nA cross-study biomarker app with ten custom D3 and Observable Plot htmlwidgets. The live demo runs on invented data.\n\n\n\n\n\n\n\n\n\n\n\n\nReport Slide Generator\n\n\n\nshiny\n\nhtmlwidgets\n\ngolem\n\nofficer\n\n\n\nA redesign of a client Shiny app that builds report PowerPoints: a new workflow, brand alignment and a live in-browser slide preview.\n\n\n\n\n\n\n\n\n\n\n\n\nHandsome Table\n\n\n\nhtmlwidgets\n\njavascript\n\npackage\n\n\n\nAn htmlwidget that brings Handsontable’s spreadsheet-style tables to R and Shiny. On its way to becoming an open-source package.\n\n\n\n\n\nNo matching items"
+  }
+]
