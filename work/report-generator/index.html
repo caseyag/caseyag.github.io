@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-categories">
     <div class="quarto-category">shiny</div>
     <div class="quarto-category">htmlwidgets</div>
-    <div class="quarto-category">golem</div>
+    <div class="quarto-category">javascript</div>
     <div class="quarto-category">officer</div>
   </div>
   </div>
@@ -203,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-i-did" class="level2">
 <h2 data-anchor-id="what-i-did">What I did</h2>
 <ul>
-<li><strong>A live PowerPoint preview widget.</strong> This was the biggest piece. I built a custom htmlwidget so users see the real deck before they download it: officer builds the .pptx on the server, the file goes to the browser, and a client-side renderer draws the slides, which users can reorder. The preview and the download use the same file, so they can’t drift apart, and users can review the deck, go back to adjust a slide and check it again without ever leaving the app.</li>
+<li><strong>A live PowerPoint preview widget.</strong> This was the biggest piece. I built a custom htmlwidget so users see the real deck before they download it: officer builds the .pptx on the server and sends the file to the browser. There, the open-source JavaScript library <a href="https://github.com/aiden0z/pptx-renderer">pptx-renderer</a> (<code>@aiden0z/pptx-renderer</code>) draws each slide as HTML and SVG, and <a href="https://sortablejs.github.io/Sortable/">SortableJS</a> lets users drag slides into a new order. The preview and the download use the same file, so they can’t drift apart, and users can review the deck, go back to adjust a slide and check it again without ever leaving the app.</li>
 <li><strong>A new UX flow.</strong> I replaced the original layout with a three-step workflow, Upload → Configure → Preview &amp; Export, with a progress indicator and a consistent three-pane configure screen: slides on the left, the figure in the middle, and its settings on the right.</li>
 <li><strong>Brand alignment.</strong> I brought the app’s colors, type and components in line with the client’s brand, so it feels like one of their own tools.</li>
 <li><strong>A reorganized codebase.</strong> I repurposed the client’s existing figure code (eleven figure types plus summary tables) into a three-layer module design: a pure plotting function, a tab module that wires settings into it, and a dynamic layer that builds one tab per parameter in the upload. Axis, legend, error-bar and color controls became shared modules, with module-wide defaults that each parameter can override.</li>
