@@ -81,7 +81,7 @@ I bridge data science and design. I combine advanced R Shiny development with cu
 ::: {.about-body}
 I'm a contract data scientist and an experienced R Shiny developer based in the Indianapolis area. Before that, I spent several years at Atorus Research as a lead Shiny developer on clinical research apps, taking them from the first wireframes through modular, production-ready code. Alongside the coding, I led projects day to day: working directly with stakeholders and clients, planning and managing timelines, and mentoring the developers on my teams.
 
-My background is a mix that shows up in my work: I studied graphic design alongside statistics, and I've spent years writing production code, from clinical programming in R to complex Shiny architecture. I care as much about how an app looks and feels as about how it's built. Data deserves better than dashboards that feel like chores.
+My background is a mix that shows up in my work: I studied biostatistics and statistics, with a minor in graphic design, and I've spent years writing production code, from clinical programming in R to complex Shiny architecture. I care as much about how an app looks and feels as about how it's built. Data deserves better than dashboards that feel like chores.
 
 ::: {.work-on}
 [What I work on]{.mono-label}
