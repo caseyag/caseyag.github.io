@@ -8,7 +8,7 @@ open-graph:
   image-alt: "Configure screen of the report slide generator, with the plot blurred"
 twitter-card:
   image-alt: "Configure screen of the report slide generator, with the plot blurred"
-categories: [shiny, htmlwidgets, golem, officer]
+categories: [shiny, htmlwidgets, javascript, officer]
 ---
 
 A redesign of a pharma client's tool that turns a prepared data file into a ready-to-edit topline report deck. The screenshots use invented data with the plots blurred, and the client's name and logo are removed.
@@ -35,7 +35,7 @@ The app is three steps, **Upload → Configure → Preview & Export**, with a pr
 
 ## What I did
 
-- **A live PowerPoint preview widget.** This was the biggest piece. I built a custom htmlwidget so users see the real deck before they download it: officer builds the .pptx on the server, the file goes to the browser, and a client-side renderer draws the slides, which users can reorder. The preview and the download use the same file, so they can't drift apart, and users can review the deck, go back to adjust a slide and check it again without ever leaving the app.
+- **A live PowerPoint preview widget.** This was the biggest piece. I built a custom htmlwidget so users see the real deck before they download it: officer builds the .pptx on the server and sends the file to the browser. There, the open-source JavaScript library [pptx-renderer](https://github.com/aiden0z/pptx-renderer) (`@aiden0z/pptx-renderer`) draws each slide as HTML and SVG, and [SortableJS](https://sortablejs.github.io/Sortable/) lets users drag slides into a new order. The preview and the download use the same file, so they can't drift apart, and users can review the deck, go back to adjust a slide and check it again without ever leaving the app.
 - **A new UX flow.** I replaced the original layout with a three-step workflow, Upload → Configure → Preview & Export, with a progress indicator and a consistent three-pane configure screen: slides on the left, the figure in the middle, and its settings on the right.
 - **Brand alignment.** I brought the app's colors, type and components in line with the client's brand, so it feels like one of their own tools.
 - **A reorganized codebase.** I repurposed the client's existing figure code (eleven figure types plus summary tables) into a three-layer module design: a pure plotting function, a tab module that wires settings into it, and a dynamic layer that builds one tab per parameter in the upload. Axis, legend, error-bar and color controls became shared modules, with module-wide defaults that each parameter can override.
