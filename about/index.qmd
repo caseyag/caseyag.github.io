@@ -52,7 +52,7 @@ My background is a mix that shows up in my work: I studied biostatistics and sta
   </div>
   <div class="folder-panel" role="tabpanel" id="panel-ux" aria-labelledby="tab-ux" tabindex="0" hidden>
     <h3>UI/UX design</h3>
-    <p>Talking with stakeholders and turning those conversations into clear feature requirements. Then user research, wireframes, prototypes and style guides, designed in Figma or Claude Design.</p>
+    <p>Talking with stakeholders and turning those conversations into clear feature requirements. User research, wireframes, prototypes and style guides, designed in Figma or Claude Design.</p>
     <p class="folder-seen"><span>See it in:</span> <a href="../talks/design-of-everyday-shiny-apps/index.html">Design of Everyday Shiny Apps</a> · <a href="../work/report-generator/index.html">Report Slide Generator</a></p>
   </div>
   <div class="folder-panel" role="tabpanel" id="panel-css" aria-labelledby="tab-css" tabindex="0" hidden>
