@@ -1,7 +1,7 @@
 ---
 title: "Design of Everyday Apps"
-subtitle: "posit::conf(2025)"
-description: "Our posit::conf(2025) talk: a working client Shiny app, redesigned on stage through layout, color, typography and components."
+subtitle: "posit::conf(2025) · PHUSE, March 2026"
+description: "Our talk from posit::conf(2025) and PHUSE (March 2026): a working client Shiny app, redesigned on stage through layout, color, typography and components."
 date: 2025-09-01
 image: thumbnail.png
 image-alt: "Before and after screenshots of the app redesign, side by side"
@@ -13,7 +13,7 @@ twitter-card:
   image-alt: "Before and after screenshots of the app redesign, side by side"
 ---
 
-In our posit::conf(2025) talk, we took a working client Shiny app and rebuilt it step by step on stage, one design lever at a time.
+We first gave this talk at posit::conf(2025) and presented it again at PHUSE in March 2026. In it, we take a working client Shiny app and rebuild it step by step, one design lever at a time.
 
 ::: {.cta-row}
 [View the code on GitHub](https://github.com/caseyag/Posit-Conf-25){.btn-cta}

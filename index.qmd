@@ -46,7 +46,7 @@ I bridge data science and design. I combine advanced R Shiny development with cu
   <a class="tile" href="talks/index.html">
     <span class="tile-path" aria-hidden="true">/talks</span>
     <span class="tile-name">Talks</span>
-    <span class="tile-desc">Latest: <em>Design of Everyday Apps</em>, posit::conf(2025).</span>
+    <span class="tile-desc">Latest: <em>Design of Everyday Apps</em>, at posit::conf(2025) and PHUSE (March 2026).</span>
   </a>
   <a class="tile" href="resume/index.html">
     <span class="tile-path" aria-hidden="true">/resume</span>
