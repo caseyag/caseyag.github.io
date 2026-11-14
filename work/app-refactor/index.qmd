@@ -25,7 +25,7 @@ The app was a single `app_final.R`: about 5,400 lines and 146 KB. Every change r
 - **Modularized the monolith.** I split the single script into feature modules for projects, analysis plans, authors, templates, reports and an audit trail, plus utility files for data management, the database and shared helpers, all in a standard golem structure.
 
     ![The new app: focused modules and utilities, none larger than 35 KB, in place of one 146 KB file.](module-files.png){fig-alt="File list showing mod_analysis_plan.R, mod_authors.R, mod_project.R, mod_report.R, mod_audit_trail.R, mod_templates.R and utility files with their sizes" width="420"}
-- **Refreshed the UI.** I redesigned the interface in Figma and rebuilt it in the new module structure.
+- **Designed and built a new UI.** I designed the refreshed interface in Figma, then built it out myself in the new module structure.
 - **Made it faster.** I streamlined and rewrote core functions for efficiency.
 - **Prepared it for production.** I identified what had to change to move from a local app to Posit Connect, and prepared the app for that environment.
 - **Got PDF reporting working.** I explored and implemented PharmTeX for LaTeX-based PDF reports, with wrapper scripts for both Windows and Linux so it ran locally and on the server.
