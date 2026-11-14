@@ -91,6 +91,13 @@
     "text": "Before and after\nThe same two screens in the original app and in my redesign. Click any screenshot to enlarge it. The app name and the client’s logo are blurred, and the data is test data.\n\n\n\n\n\n\nBefore: project setup in a dark dashboard, with instructions crammed into a side panel.\n\n\n\n\n\n\n\nAfter: project setup with clear tabs, a searchable project list and a tidy edit form.\n\n\n\n\n\n\n\n\n\n\n\nBefore: report setup spread across nested sidebar menus.\n\n\n\n\n\n\n\nAfter: report setup on one page, with project details up top, studies and dosing groups side by side, and inline validation."
   },
   {
+    "objectID": "work/app-refactor/index.html#designing-with-a-tough-brand-kit",
+    "href": "work/app-refactor/index.html#designing-with-a-tough-brand-kit",
+    "title": "Shiny App Health Check & Refactor",
+    "section": "Designing with a tough brand kit",
+    "text": "Designing with a tough brand kit\nThe client’s brand palette is mostly red, and red everywhere reads as alarm in an app people use for hours. I kept red as the main brand color but saved it for the things that matter: active tabs, primary buttons and required fields. White space and black text carry the rest of the layout, so the app feels calm and breathable while still clearly on brand. Where I could, I brought in the palette’s lighter secondary blue for headers and selected rows, which softens the red without leaving the brand."
+  },
+  {
     "objectID": "work/app-refactor/index.html#what-i-did",
     "href": "work/app-refactor/index.html#what-i-did",
     "title": "Shiny App Health Check & Refactor",
