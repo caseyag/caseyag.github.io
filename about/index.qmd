@@ -6,7 +6,7 @@ page-layout: custom
 
 ::: {#main role="main"}
 
-::: {.hero .hero-compact}
+::: {.hero .hero-compact .hero-about}
 ::: {.wrap}
 [[//]{aria-hidden="true"} about]{.mono-label}
 

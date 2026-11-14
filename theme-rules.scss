@@ -98,6 +98,8 @@ a:focus-visible,
 .hero-compact { padding-block: 56px; }
 .hero-compact h1 { font-size: clamp(2.75rem, 6vw, 5rem); max-width: none; margin: 0.75rem 0; overflow-wrap: anywhere; }
 .resume-title { font-size: 1.25rem; font-weight: 500; }
+.hero-about { padding-block: 36px; }
+.hero-about + .page-section { padding-top: 64px; }
 
 // Entry tiles
 .tiles {
