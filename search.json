@@ -39,7 +39,7 @@
     "href": "work/handsome-table/index.html",
     "title": "Handsome Table",
     "section": "",
-    "text": "Handsome Table wraps the Handsontable JavaScript library as an htmlwidget, giving R and Shiny apps a spreadsheet-style table with styling that fits the app around it. It powers the data review tab in the app redesign from our posit::conf(2025) talk, Design of Everyday Apps."
+    "text": "Handsome Table wraps the Handsontable JavaScript library as an htmlwidget, giving R and Shiny apps a spreadsheet-style table with styling that fits the app around it. It powers the data review tab in the app redesign from our posit::conf(2025) talk, Design of Everyday Shiny Apps."
   },
   {
     "objectID": "work/handsome-table/index.html#try-it",
@@ -67,7 +67,7 @@
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "Design of Everyday Apps\n\n\n\ntalk\n\nux\n\nshiny\n\n\n\nOur talk from posit::conf(2025) and PHUSE (March 2026): a working client Shiny app, redesigned on stage through layout, color, typography and components.\n\n\n\nSeptember 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Design of Everyday Shiny Apps\n\n\n\ntalk\n\nux\n\nshiny\n\n\n\nOur talk from posit::conf(2025) and PHUSE (March 2026): a working client Shiny app, redesigned on stage through layout, color, typography and components.\n\n\n\nSeptember 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resume/index.html#experience",
@@ -95,7 +95,7 @@
     "href": "resume/index.html#speaking",
     "title": "Casey Aguilar-Gervase",
     "section": "Speaking",
-    "text": "Speaking\nPHUSE, March 2026 · posit::conf(2025)\nDesign of Everyday Apps"
+    "text": "Speaking\nPHUSE, March 2026 · posit::conf(2025)\nDesign of Everyday Shiny Apps"
   },
   {
     "objectID": "index.html#featured-heading",
@@ -121,35 +121,42 @@
   {
     "objectID": "talks/design-of-everyday-apps/index.html",
     "href": "talks/design-of-everyday-apps/index.html",
-    "title": "Design of Everyday Apps",
+    "title": "Design of Everyday Shiny Apps",
     "section": "",
     "text": "We first gave this talk at posit::conf(2025) and presented it again at PHUSE in March 2026. In it, we take a working client Shiny app and rebuild it step by step, one design lever at a time."
   },
   {
+    "objectID": "talks/design-of-everyday-apps/index.html#watch-the-talk",
+    "href": "talks/design-of-everyday-apps/index.html#watch-the-talk",
+    "title": "Design of Everyday Shiny Apps",
+    "section": "Watch the talk",
+    "text": "Watch the talk"
+  },
+  {
     "objectID": "talks/design-of-everyday-apps/index.html#the-problem",
     "href": "talks/design-of-everyday-apps/index.html#the-problem",
-    "title": "Design of Everyday Apps",
+    "title": "Design of Everyday Shiny Apps",
     "section": "The problem",
     "text": "The problem\nThe client’s Shiny app worked, but it was hard to use. Navigation was inconsistent, color competed for attention everywhere, and tables and actions gave users little guidance."
   },
   {
     "objectID": "talks/design-of-everyday-apps/index.html#before-and-after",
     "href": "talks/design-of-everyday-apps/index.html#before-and-after",
-    "title": "Design of Everyday Apps",
+    "title": "Design of Everyday Shiny Apps",
     "section": "Before and after",
     "text": "Before and after\nThese screens use the public UX survey dataset from the talk.\n\n\n\n\n\n\nBefore: a dark dashboard sidebar and loud, solid-color boxes.\n\n\n\n\n\n\n\nAfter: a clean bslib layout, white cards and color only where it matters.\n\n\n\n\n\n\n\n\n\n\n\nBefore: the data table was hidden in a collapsed box at the bottom of the page.\n\n\n\n\n\n\n\nAfter: the data gets its own tab, with Handsome Table filters."
   },
   {
     "objectID": "talks/design-of-everyday-apps/index.html#the-four-design-levers",
     "href": "talks/design-of-everyday-apps/index.html#the-four-design-levers",
-    "title": "Design of Everyday Apps",
+    "title": "Design of Everyday Shiny Apps",
     "section": "The four design levers",
     "text": "The four design levers\n\nLayout. A cohesive experience starts with a clear structure: intuitive user journeys, consistent flow and streamlined grid layouts that make navigation familiar.\nColor. The original app followed brand guidelines. The redesign uses color on purpose, as an accent that highlights key information and actions without overwhelming the user.\nTypography. One client font, with hierarchy built from size and weight to guide attention and improve readability.\nComponents. Handsome Table, a custom Handsontable wrapper, for friendlier tables; tooltips and popovers for extra detail without clutter; and visual feedback for every action, with a confirmation step for serious ones like deletions."
   },
   {
     "objectID": "talks/design-of-everyday-apps/index.html#code-and-apps",
     "href": "talks/design-of-everyday-apps/index.html#code-and-apps",
-    "title": "Design of Everyday Apps",
+    "title": "Design of Everyday Shiny Apps",
     "section": "Code and apps",
     "text": "Code and apps\nThe original app and the redesigned version are in the talk repo. Each step of the talk has its own branch."
   },
