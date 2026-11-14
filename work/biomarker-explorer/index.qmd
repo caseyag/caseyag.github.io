@@ -9,7 +9,6 @@ open-graph:
 twitter-card:
   image-alt: "Landing page of the Biomarker Explorer demo app"
 categories: [shiny, htmlwidgets, d3, ux]
-featured: true
 ---
 
 I designed and built a cross-study biomarker app for a pharma client's scientists. This public version is a rebuild with invented data, so you can try it.

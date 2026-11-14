@@ -258,29 +258,16 @@ def home_hero():
 @check
 def home_sections():
     refs = parse(page("index.html"))
-    for section_id in ("featured", "about", "contact"):
+    for section_id in ("about", "contact"):
         assert section_id in refs.ids, f"homepage missing #{section_id}"
+    assert "featured" not in refs.ids, "the Featured section was removed so About gets the focus"
     assert "mailto:97caguilar@gmail.com" in refs.hrefs, "homepage needs an email link"
-    for section_id in ("featured", "about"):
+    for section_id in ("about",):
         assert "page-section" in refs.classes.get(section_id, []), f"#{section_id} should have class page-section"
     html = page("index.html")
     assert 'role="main"' in html or "<main" in html, "homepage needs a main landmark"
     assert_img_alts(html, "index.html")
 
-
-@check
-def home_featured_items():
-    hrefs = parse(page("index.html")).hrefs
-    featured = [
-        qmd.parent
-        for qmd in sorted(list((ROOT / "work").glob("*/index.qmd")) + list((ROOT / "talks").glob("*/index.qmd")))
-        if re.search(r"^featured:\s*true\s*$", qmd.read_text(encoding="utf-8"), re.M)
-    ]
-    assert featured, "at least one work or talk item should be featured"
-    for folder in featured:
-        target = f"{folder.relative_to(ROOT).as_posix()}/index.html"
-        assert (SITE / target).exists(), f"featured item not rendered: {target}"
-        assert any(h.endswith(target) for h in hrefs), f"featured listing should link to {target}"
 
 
 @check

@@ -8,7 +8,6 @@ aliases:
 image: thumbnail.png
 image-alt: "Before and after screenshots of the app redesign, side by side"
 categories: [talk, ux, shiny]
-featured: true
 open-graph:
   image-alt: "Before and after screenshots of the app redesign, side by side"
 twitter-card:

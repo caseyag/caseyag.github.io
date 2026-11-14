@@ -2,18 +2,6 @@
 pagetitle: "Casey Aguilar-Gervase · Data Scientist & R Shiny Specialist"
 description: "Data deserves apps people actually want to use. Data scientist and R Shiny specialist in the Indianapolis area."
 page-layout: custom
-listing:
-  id: featured-list
-  contents:
-    - "talks/*/index.qmd"
-    - "work/*/index.qmd"
-  include:
-    featured: true
-  type: grid
-  grid-columns: 2
-  image-height: auto
-  sort: "date desc"
-  fields: [image, title, description, categories]
 ---
 
 ::: {#main role="main"}
@@ -55,17 +43,6 @@ I bridge data science and design. I combine advanced R Shiny development with cu
   </a>
 </nav>
 ```
-:::
-
-::: {#featured .wrap .page-section}
-::: {.section-head}
-## Featured {#featured-heading}
-
-[All work [→]{aria-hidden="true"}](work/index.qmd)
-:::
-
-::: {#featured-list}
-:::
 :::
 
 ::: {#about .wrap .page-section}

@@ -25,13 +25,12 @@ Before launch, also run `python3 tests/check_site.py --launch no_todo_markers`. 
 
 1. Copy an existing item folder, for example `work/biomarker-explorer/` to `work/my-new-app/`.
 2. Edit the front matter at the top of `index.qmd`: `title`, `description`, `categories`, `order` (its position in the Work grid; talks use `date` instead), `image: thumbnail.png` and `image-alt:`. Also repeat the alt text under `open-graph: image-alt:` and `twitter-card: image-alt:`, or link previews show the site-wide alt text.
-3. Add `featured: true` to show it on the homepage. Remove it from an older item to keep two featured items.
-4. Replace the thumbnail with a 1600x900 PNG. A cropped screenshot works well. To make a title card instead, draw it as `thumbnail.svg`, then convert it:
+3. Replace the thumbnail with a 1600x900 PNG. A cropped screenshot works well. To make a title card instead, draw it as `thumbnail.svg`, then convert it:
 
        qlmanage -t -s 1600 -o "$TMPDIR" thumbnail.svg
        sips -c 900 1600 "$TMPDIR/thumbnail.svg.png" --out thumbnail.png
 
-5. Write the page and push.
+4. Write the page and push.
 
 ## Add a section (packages, case studies, writing)
 
