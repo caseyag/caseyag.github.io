@@ -2,14 +2,14 @@
   {
     "listing": "/talks/index.html",
     "items": [
-      "/talks/design-of-everyday-apps/index.html"
+      "/talks/design-of-everyday-shiny-apps/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
       "/work/biomarker-explorer/index.html",
-      "/talks/design-of-everyday-apps/index.html"
+      "/talks/design-of-everyday-shiny-apps/index.html"
     ]
   },
   {

@@ -119,43 +119,43 @@
     "text": "Let’s talk about your project, team, or talk idea."
   },
   {
-    "objectID": "talks/design-of-everyday-apps/index.html",
-    "href": "talks/design-of-everyday-apps/index.html",
+    "objectID": "talks/design-of-everyday-shiny-apps/index.html",
+    "href": "talks/design-of-everyday-shiny-apps/index.html",
     "title": "Design of Everyday Shiny Apps",
     "section": "",
-    "text": "We first gave this talk at posit::conf(2025) and presented it again at PHUSE in March 2026. In it, we take a working client Shiny app and rebuild it step by step, one design lever at a time."
+    "text": "I gave this talk with Maya Gans, first at posit::conf(2025) and again at PHUSE in March 2026. In it, we take a working client Shiny app and rebuild it step by step, one design lever at a time. Huge thanks to Maya, my co-presenter and co-builder on this one, and on Handsome Table too."
   },
   {
-    "objectID": "talks/design-of-everyday-apps/index.html#watch-the-talk",
-    "href": "talks/design-of-everyday-apps/index.html#watch-the-talk",
+    "objectID": "talks/design-of-everyday-shiny-apps/index.html#watch-the-talk",
+    "href": "talks/design-of-everyday-shiny-apps/index.html#watch-the-talk",
     "title": "Design of Everyday Shiny Apps",
     "section": "Watch the talk",
     "text": "Watch the talk"
   },
   {
-    "objectID": "talks/design-of-everyday-apps/index.html#the-problem",
-    "href": "talks/design-of-everyday-apps/index.html#the-problem",
+    "objectID": "talks/design-of-everyday-shiny-apps/index.html#the-problem",
+    "href": "talks/design-of-everyday-shiny-apps/index.html#the-problem",
     "title": "Design of Everyday Shiny Apps",
     "section": "The problem",
     "text": "The problem\nThe client’s Shiny app worked, but it was hard to use. Navigation was inconsistent, color competed for attention everywhere, and tables and actions gave users little guidance."
   },
   {
-    "objectID": "talks/design-of-everyday-apps/index.html#before-and-after",
-    "href": "talks/design-of-everyday-apps/index.html#before-and-after",
+    "objectID": "talks/design-of-everyday-shiny-apps/index.html#before-and-after",
+    "href": "talks/design-of-everyday-shiny-apps/index.html#before-and-after",
     "title": "Design of Everyday Shiny Apps",
     "section": "Before and after",
     "text": "Before and after\nThese screens use the public UX survey dataset from the talk.\n\n\n\n\n\n\nBefore: a dark dashboard sidebar and loud, solid-color boxes.\n\n\n\n\n\n\n\nAfter: a clean bslib layout, white cards and color only where it matters.\n\n\n\n\n\n\n\n\n\n\n\nBefore: the data table was hidden in a collapsed box at the bottom of the page.\n\n\n\n\n\n\n\nAfter: the data gets its own tab, with Handsome Table filters."
   },
   {
-    "objectID": "talks/design-of-everyday-apps/index.html#the-four-design-levers",
-    "href": "talks/design-of-everyday-apps/index.html#the-four-design-levers",
+    "objectID": "talks/design-of-everyday-shiny-apps/index.html#the-four-design-levers",
+    "href": "talks/design-of-everyday-shiny-apps/index.html#the-four-design-levers",
     "title": "Design of Everyday Shiny Apps",
     "section": "The four design levers",
     "text": "The four design levers\n\nLayout. A cohesive experience starts with a clear structure: intuitive user journeys, consistent flow and streamlined grid layouts that make navigation familiar.\nColor. The original app followed brand guidelines. The redesign uses color on purpose, as an accent that highlights key information and actions without overwhelming the user.\nTypography. One client font, with hierarchy built from size and weight to guide attention and improve readability.\nComponents. Handsome Table, a custom Handsontable wrapper, for friendlier tables; tooltips and popovers for extra detail without clutter; and visual feedback for every action, with a confirmation step for serious ones like deletions."
   },
   {
-    "objectID": "talks/design-of-everyday-apps/index.html#code-and-apps",
-    "href": "talks/design-of-everyday-apps/index.html#code-and-apps",
+    "objectID": "talks/design-of-everyday-shiny-apps/index.html#code-and-apps",
+    "href": "talks/design-of-everyday-shiny-apps/index.html#code-and-apps",
     "title": "Design of Everyday Shiny Apps",
     "section": "Code and apps",
     "text": "Code and apps\nThe original app and the redesigned version are in the talk repo. Each step of the talk has its own branch."
