@@ -67,7 +67,7 @@
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "Design of Everyday Apps\n\n\n\ntalk\n\nux\n\nshiny\n\n\n\nOur posit::conf(2025) talk: a working client Shiny app, redesigned on stage through layout, color, typography and components.\n\n\n\nSeptember 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Design of Everyday Apps\n\n\n\ntalk\n\nux\n\nshiny\n\n\n\nOur talk from posit::conf(2025) and PHUSE (March 2026): a working client Shiny app, redesigned on stage through layout, color, typography and components.\n\n\n\nSeptember 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "resume/index.html#experience",
@@ -95,7 +95,7 @@
     "href": "resume/index.html#speaking",
     "title": "Casey Aguilar-Gervase",
     "section": "Speaking",
-    "text": "Speaking\nposit::conf(2025)\nDesign of Everyday Apps"
+    "text": "Speaking\nPHUSE, March 2026 · posit::conf(2025)\nDesign of Everyday Apps"
   },
   {
     "objectID": "index.html#featured-heading",
@@ -123,7 +123,7 @@
     "href": "talks/design-of-everyday-apps/index.html",
     "title": "Design of Everyday Apps",
     "section": "",
-    "text": "In our posit::conf(2025) talk, we took a working client Shiny app and rebuilt it step by step on stage, one design lever at a time."
+    "text": "We first gave this talk at posit::conf(2025) and presented it again at PHUSE in March 2026. In it, we take a working client Shiny app and rebuild it step by step, one design lever at a time."
   },
   {
     "objectID": "talks/design-of-everyday-apps/index.html#the-problem",
