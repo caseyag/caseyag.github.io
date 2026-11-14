@@ -144,7 +144,7 @@ a:focus-visible,
 .section-head p { margin: 0; }
 
 // About
-.about { display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start; }
+.about { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; }
 .about-photo {
   // Set width directly: as a flex item, the img's width="933" attribute
   // would otherwise set its minimum size and override flex-basis.

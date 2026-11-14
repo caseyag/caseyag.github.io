@@ -27,6 +27,9 @@ I'm a contract data scientist and an experienced R Shiny developer based in the 
 
 My background is a mix that shows up in my work: I studied biostatistics and statistics, with a minor in graphic design, and I've spent years writing production code, from clinical programming in R to complex Shiny architecture. I care as much about how an app looks and feels as about how it's built. Data deserves better than dashboards that feel like chores.
 
+:::
+:::
+
 ::: {.work-on}
 [What I work on]{.mono-label}
 
@@ -44,8 +47,6 @@ css
 
 clinical
 : CDISC, PK/PD, tables, listings and figures
-:::
-:::
 :::
 
 ::: {.dogs}
