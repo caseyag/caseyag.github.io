@@ -150,7 +150,7 @@ Team Captain, 2017–2018 season
 ## Speaking
 
 [PHUSE, March 2026 · posit::conf(2025)]{.mono-label}\
-**[Design of Everyday Apps](../talks/design-of-everyday-apps/index.qmd)**
+**[Design of Everyday Shiny Apps](../talks/design-of-everyday-apps/index.qmd)**
 :::
 :::
 :::

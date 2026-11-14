@@ -11,7 +11,7 @@ twitter-card:
 categories: [htmlwidgets, javascript, package]
 ---
 
-Handsome Table wraps the Handsontable JavaScript library as an htmlwidget, giving R and Shiny apps a spreadsheet-style table with styling that fits the app around it. It powers the data review tab in the app redesign from our posit::conf(2025) talk, [Design of Everyday Apps](../../talks/design-of-everyday-apps/index.qmd).
+Handsome Table wraps the Handsontable JavaScript library as an htmlwidget, giving R and Shiny apps a spreadsheet-style table with styling that fits the app around it. It powers the data review tab in the app redesign from our posit::conf(2025) talk, [Design of Everyday Shiny Apps](../../talks/design-of-everyday-apps/index.qmd).
 
 ## Try it
 
