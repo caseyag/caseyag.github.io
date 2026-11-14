@@ -26,6 +26,11 @@ I bridge data science and design. I combine advanced R Shiny development with cu
 ::: {.wrap}
 ```{=html}
 <nav class="tiles" aria-label="Sections">
+  <a class="tile" href="about/index.html">
+    <span class="tile-path" aria-hidden="true">/about</span>
+    <span class="tile-name">About</span>
+    <span class="tile-desc">Who I am, how I work, and the two dogs who supervise.</span>
+  </a>
   <a class="tile" href="work/index.html">
     <span class="tile-path" aria-hidden="true">/work</span>
     <span class="tile-name">Apps</span>
@@ -43,68 +48,6 @@ I bridge data science and design. I combine advanced R Shiny development with cu
   </a>
 </nav>
 ```
-:::
-
-::: {#about .wrap .page-section}
-::: {.section-head}
-## About {#about-heading}
-:::
-
-::: {.about}
-```{=html}
-<img class="about-photo" src="images/headshot.jpg" alt="Casey Aguilar-Gervase smiling, with long light-brown hair, against a dark background" width="933" height="1200">
-```
-
-::: {.about-body}
-I'm a contract data scientist and an experienced R Shiny developer based in the Indianapolis area. Before that, I spent several years at Atorus Research as a lead Shiny developer on clinical research apps, taking them from the first wireframes through modular, production-ready code. Alongside the development work, I led projects day to day: working directly with stakeholders and clients, planning and managing timelines, and mentoring the developers on my teams.
-
-My background is a mix that shows up in my work: I studied biostatistics and statistics, with a minor in graphic design, and I've spent years writing production code, from clinical programming in R to complex Shiny architecture. I care as much about how an app looks and feels as about how it's built. Data deserves better than dashboards that feel like chores.
-
-::: {.work-on}
-[What I work on]{.mono-label}
-
-shiny
-: Modular apps, golem, bslib, R6
-
-js
-: Custom htmlwidgets, JavaScript and D3
-
-ux
-: User research, wireframes, prototypes, style guides
-
-css
-: Custom HTML/CSS and branded, polished interfaces
-
-clinical
-: CDISC, PK/PD, tables, listings and figures
-:::
-:::
-:::
-
-::: {.dogs}
-[[//]{aria-hidden="true"} off the clock]{.mono-label}
-
-### Meet my coworkers {#dogs-heading}
-
-Mason and Tony work behind the scenes on every project. They attend all my meetings and sleep through most of them.
-
-```{=html}
-<div class="dogs-grid">
-  <figure>
-    <img src="images/dog-mason.jpg" alt="Mason, a black dog with a white muzzle, staring into the camera from beside the couch" width="1200" height="1014" loading="lazy">
-    <figcaption><strong>Mason</strong> reviews my code from very close range.</figcaption>
-  </figure>
-  <figure>
-    <img src="images/dog-tony.jpg" alt="Tony, a tan dog in a blue bandana, lying on a drop cloth next to a freshly painted magenta door" width="900" height="1200" loading="lazy">
-    <figcaption><strong>Tony</strong> supervises every project, DIY and professional.</figcaption>
-  </figure>
-  <figure>
-    <img src="images/dogs-walk.jpg" alt="Casey on a lakeside path at sunset with Mason and Tony on leashes" width="900" height="1200" loading="lazy">
-    <figcaption>The whole team, out for a sunset walk.</figcaption>
-  </figure>
-</div>
-```
-:::
 :::
 
 ::: {#contact .contact}

@@ -78,7 +78,7 @@ def navbar_links():
         "work/index.html",
         "talks/index.html",
         "resume/index.html",
-        "index.html#about",
+        "about/index.html",
         "https://github.com/caseyag",
         "https://www.linkedin.com/in/casey-aguilar-gervase/",
     ):
@@ -258,23 +258,34 @@ def home_hero():
 @check
 def home_sections():
     refs = parse(page("index.html"))
-    for section_id in ("about", "contact"):
-        assert section_id in refs.ids, f"homepage missing #{section_id}"
-    assert "featured" not in refs.ids, "the Featured section was removed so About gets the focus"
+    assert "contact" in refs.ids, "homepage missing #contact"
+    assert "featured" not in refs.ids, "the Featured section was removed from the homepage"
+    assert "about" not in refs.ids, "About lives on its own page (about/index.html), not the homepage"
+    assert any(h.endswith("about/index.html") for h in refs.hrefs), "homepage should link to the About page"
     assert "mailto:97caguilar@gmail.com" in refs.hrefs, "homepage needs an email link"
-    for section_id in ("about",):
-        assert "page-section" in refs.classes.get(section_id, []), f"#{section_id} should have class page-section"
     html = page("index.html")
     assert 'role="main"' in html or "<main" in html, "homepage needs a main landmark"
-    assert_img_alts(html, "index.html")
+
+
+@check
+def about_page():
+    refs = parse(page("about/index.html"))
+    for section_id in ("about", "dogs-heading", "contact"):
+        assert section_id in refs.ids, f"about page missing #{section_id}"
+    assert "page-section" in refs.classes.get("about", []), "#about should have class page-section"
+    assert "mailto:97caguilar@gmail.com" in refs.hrefs, "about page needs an email link"
+    html = page("about/index.html")
+    assert 'role="main"' in html or "<main" in html, "about page needs a main landmark"
+    assert "What I work on" in html, "about page should list what I work on"
+    assert_img_alts(html, "about/index.html")
 
 
 
 @check
-def home_photos():
-    hrefs = parse(page("index.html")).hrefs
+def about_photos():
+    hrefs = parse(page("about/index.html")).hrefs
     for photo in ("images/headshot.jpg", "images/dog-mason.jpg", "images/dog-tony.jpg", "images/dogs-walk.jpg"):
-        assert photo in hrefs, f"homepage should show {photo}"
+        assert f"../{photo}" in hrefs, f"about page should show {photo}"
         assert (SITE / photo).exists(), f"{photo} not copied into the site"
 
 
@@ -407,7 +418,7 @@ SITE_WIDE_ALT = "Casey Aguilar-Gervase, Data Scientist & R Shiny Specialist"
 @check
 def open_graph():
     site_url = "https://caseyag.github.io/"
-    for rel in ("index.html", "work/index.html", "talks/index.html", "resume/index.html"):
+    for rel in ("index.html", "about/index.html", "work/index.html", "talks/index.html", "resume/index.html"):
         metas = social_metas(page(rel))
         for prop in ("og:title", "og:description", "og:image", "og:image:alt"):
             assert metas.get(prop), f"{rel} missing {prop} meta tag"

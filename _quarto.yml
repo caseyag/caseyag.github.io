@@ -25,14 +25,14 @@ website:
   navbar:
     title: "caseyag"
     right:
+      - text: About
+        href: about/index.qmd
       - text: Work
         href: work/index.qmd
       - text: Talks
         href: talks/index.qmd
       - text: Resume
         href: resume/index.qmd
-      - text: About
-        href: "index.qmd#about"
       - icon: github
         href: https://github.com/caseyag
         target: _blank
