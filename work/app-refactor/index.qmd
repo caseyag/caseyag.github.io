@@ -9,6 +9,7 @@ open-graph:
 twitter-card:
   image-alt: "Before and after: one 146 KB app_final.R file, then twelve focused module and utility files"
 categories: [shiny, golem, refactoring, posit-connect]
+lightbox: true
 ---
 
 A pharma client had a clinical reporting app that worked, but the whole thing lived in one file. I led a health check and refactor to make it maintainable, faster and ready for production.
@@ -18,6 +19,22 @@ A pharma client had a clinical reporting app that worked, but the whole thing li
 The app was a single `app_final.R`: about 5,400 lines and 146 KB. Every change risked breaking something else, several core functions were slow, and the app only ran locally. The client needed it running in production on Posit Connect, with PDF reporting built in.
 
 ![One monolithic file became seven feature modules and four utility files in a standard golem structure.](thumbnail.png){fig-alt="Before and after: one 146 KB app_final.R file, then twelve focused module and utility files"}
+
+## Before and after
+
+The same two screens in the original app and in my redesign. Click any screenshot to enlarge it. The app name and the client's logo are blurred, and the data is test data.
+
+::: {.column-page layout-ncol=2}
+![Before: project setup in a dark dashboard, with instructions crammed into a side panel.](ui-before-project.png){fig-alt="Original app project screen with a dark sidebar, a red header and a plain form"}
+
+![After: project setup with clear tabs, a searchable project list and a tidy edit form.](ui-after-project.png){fig-alt="Redesigned project screen with Setup, Analysis Plan and Report tabs, a project table and an edit form"}
+:::
+
+::: {.column-page layout-ncol=2}
+![Before: report setup spread across nested sidebar menus.](ui-before-report.png){fig-alt="Original app report screen with study and dosing group tables and nested sidebar navigation"}
+
+![After: report setup on one page, with project details up top, studies and dosing groups side by side, and inline validation.](ui-after-report.png){fig-alt="Redesigned report screen with a project details summary, study and dosing group panels, and a form showing a required-field message"}
+:::
 
 ## What I did
 
