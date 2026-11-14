@@ -191,6 +191,28 @@ a:focus-visible,
 .contact-links p { display: flex; gap: 20px; margin: 12px 0 0; font-family: $font-family-monospace; font-size: 0.875rem; }
 .contact-links a { color: $ink; }
 
+// Expandable code screenshot ("See the ... script")
+.code-peek { margin: 1rem 0 0.5rem; }
+.code-peek summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1.5px solid $ink;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  list-style: none;
+}
+.code-peek summary::-webkit-details-marker { display: none; }
+.code-peek summary::after { content: "+"; font-family: $font-family-monospace; }
+.code-peek[open] summary::after { content: "–"; }
+.code-peek summary:hover { background: $ink; color: $paper; }
+.code-peek summary:focus-visible { outline: 3px solid $magenta; outline-offset: 3px; }
+.code-peek img { display: block; max-width: 100%; width: 560px; height: auto; margin-top: 1rem; border: 1px solid $rule-soft; }
+.code-peek p { font-size: 0.9rem; color: $muted; margin: 0.5rem 0 0; max-width: 560px; }
+
 // Listing cards (Work, Talks, Featured)
 .quarto-grid-item.card {
   border: 1px solid $ink;

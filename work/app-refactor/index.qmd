@@ -51,7 +51,7 @@ The client's brand palette is mostly red, and red everywhere reads as alarm in a
 - **Took it to production.** I worked out what had to change to move from a local app to Posit Connect, and deployed it there.
 - **Got PDF reporting working on Posit Connect.** I implemented PharmTeX for LaTeX-based PDF reports. The hardest part was the server: the TeX toolchain had to run inside Posit Connect, where paths and the environment differ from a local machine. I wrote wrapper scripts for Windows and Linux, and the Linux one detects where it's running so the same app works locally and on Connect.
 
-    ![The Linux wrapper works out whether it's running locally or on Posit Connect, points to the bundled TeX toolchain, and runs each compile step with a clear error if it fails.](pharmtex-wrapper.png){fig-alt="Bash script executex.sh that resolves the project root for dev or deployed environments, exports PharmTeX paths, and runs perltex, runlatex.pl and runlatex.sh with error checks" width="560"}
+    <details class="code-peek"><summary>See the PharmTeX script</summary><img src="pharmtex-wrapper.png" alt="Bash script executex.sh that resolves the project root for local or Posit Connect environments, exports PharmTeX paths, and runs perltex, runlatex.pl and runlatex.sh with error checks" width="1183" height="1993" loading="lazy"><p>The Linux wrapper works out whether it's running locally or on Posit Connect, points to the bundled TeX toolchain, and runs each compile step with a clear error if it fails.</p></details>
 
 ## How I ran it
 
