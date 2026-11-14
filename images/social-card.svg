@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Casey Aguilar-Gervase, data scientist and R Shiny specialist">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Casey Aguilar-Gervase, data scientist, R Shiny specialist and UI/UX designer">
   <defs>
     <pattern id="dots" width="48" height="48" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="2" fill="#46626F" fill-opacity="0.3"/>
@@ -7,7 +7,7 @@
   <rect width="1200" height="630" fill="#E3ECEA"/>
   <rect width="1200" height="630" fill="url(#dots)"/>
   <rect y="622" width="1200" height="8" fill="#EC1C8C"/>
-  <text x="72" y="120" font-family="JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#46626F">// DATA SCIENTIST &amp; R SHINY SPECIALIST</text>
+  <text x="72" y="120" font-family="JetBrains Mono, Menlo, monospace" font-size="26" letter-spacing="2" fill="#46626F">// DATA SCIENTIST, R SHINY SPECIALIST &amp; UI/UX DESIGNER</text>
   <text x="72" y="340" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="84" fill="#14090F">Casey Aguilar-Gervase</text>
   <text x="72" y="448" font-family="Fraunces, Georgia, serif" font-size="46" fill="#14090F">Data deserves apps people</text>
   <text x="72" y="512" font-family="Fraunces, Georgia, serif" font-size="46" fill="#14090F"><tspan font-style="italic">actually</tspan> want to use.</text>
