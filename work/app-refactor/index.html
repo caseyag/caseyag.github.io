@@ -177,12 +177,24 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-i-did" class="level2">
 <h2 data-anchor-id="what-i-did">What I did</h2>
 <ul>
-<li><strong>Health diagnostic and estimate.</strong> I reviewed the app end to end, mapped where the complexity lived, and gave the client a development estimate and a clear path forward.</li>
-<li><strong>Modularized the monolith.</strong> I split the single script into feature modules for projects, analysis plans, authors, templates, reports and an audit trail, plus utility files for data management, the database and shared helpers, all in a standard golem structure.</li>
-<li><strong>Refreshed the UI.</strong> I redesigned the interface in Figma and rebuilt it in the new module structure.</li>
-<li><strong>Made it faster.</strong> I streamlined and rewrote core functions for efficiency.</li>
-<li><strong>Prepared it for production.</strong> I identified what had to change to move from a local app to Posit Connect, and prepared the app for that environment.</li>
-<li><strong>Got PDF reporting working.</strong> I explored and implemented PharmTeX for LaTeX-based PDF reports, with wrapper scripts for both Windows and Linux so it ran locally and on the server.</li>
+<li><p><strong>Health diagnostic and estimate.</strong> I reviewed the app end to end, mapped where the complexity lived, and gave the client a development estimate and a clear path forward.</p></li>
+<li><p><strong>Modularized the monolith.</strong> I split the single script into feature modules for projects, analysis plans, authors, templates, reports and an audit trail, plus utility files for data management, the database and shared helpers, all in a standard golem structure.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="module-files.png" class="img-fluid figure-img" alt="File list showing mod_analysis_plan.R, mod_authors.R, mod_project.R, mod_report.R, mod_audit_trail.R, mod_templates.R and utility files with their sizes" width="420"></p>
+<figcaption>The new app: focused modules and utilities, none larger than 35 KB, in place of one 146 KB file.</figcaption>
+</figure>
+</div></li>
+<li><p><strong>Refreshed the UI.</strong> I redesigned the interface in Figma and rebuilt it in the new module structure.</p></li>
+<li><p><strong>Made it faster.</strong> I streamlined and rewrote core functions for efficiency.</p></li>
+<li><p><strong>Prepared it for production.</strong> I identified what had to change to move from a local app to Posit Connect, and prepared the app for that environment.</p></li>
+<li><p><strong>Got PDF reporting working.</strong> I explored and implemented PharmTeX for LaTeX-based PDF reports, with wrapper scripts for both Windows and Linux so it ran locally and on the server.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pharmtex-wrapper.png" class="img-fluid figure-img" alt="Bash script executex.sh that resolves the project root for dev or deployed environments, exports PharmTeX paths, and runs perltex, runlatex.pl and runlatex.sh with error checks" width="560"></p>
+<figcaption>The Linux wrapper detects whether it’s running in development or on the server, sets up the TeX toolchain, and runs each compile step with a clear error if it fails.</figcaption>
+</figure>
+</div></li>
 </ul>
 </section>
 <section id="how-i-ran-it" class="level2">
