@@ -27,10 +27,10 @@ The app was a single `app_final.R`: about 5,400 lines and 146 KB. Every change r
     ![The new app: focused modules and utilities, none larger than 35 KB, in place of one 146 KB file.](module-files.png){fig-alt="File list showing mod_analysis_plan.R, mod_authors.R, mod_project.R, mod_report.R, mod_audit_trail.R, mod_templates.R and utility files with their sizes" width="420"}
 - **Designed and built a new UI.** I designed the refreshed interface in Figma, then built it out myself in the new module structure.
 - **Made it faster.** I streamlined and rewrote core functions for efficiency.
-- **Prepared it for production.** I identified what had to change to move from a local app to Posit Connect, and prepared the app for that environment.
-- **Got PDF reporting working.** I explored and implemented PharmTeX for LaTeX-based PDF reports, with wrapper scripts for both Windows and Linux so it ran locally and on the server.
+- **Took it to production.** I worked out what had to change to move from a local app to Posit Connect, and deployed it there.
+- **Got PDF reporting working on Posit Connect.** I implemented PharmTeX for LaTeX-based PDF reports. The hardest part was the server: the TeX toolchain had to run inside Posit Connect, where paths and the environment differ from a local machine. I wrote wrapper scripts for Windows and Linux, and the Linux one detects where it's running so the same app works locally and on Connect.
 
-    ![The Linux wrapper detects whether it's running in development or on the server, sets up the TeX toolchain, and runs each compile step with a clear error if it fails.](pharmtex-wrapper.png){fig-alt="Bash script executex.sh that resolves the project root for dev or deployed environments, exports PharmTeX paths, and runs perltex, runlatex.pl and runlatex.sh with error checks" width="560"}
+    ![The Linux wrapper works out whether it's running locally or on Posit Connect, points to the bundled TeX toolchain, and runs each compile step with a clear error if it fails.](pharmtex-wrapper.png){fig-alt="Bash script executex.sh that resolves the project root for dev or deployed environments, exports PharmTeX paths, and runs perltex, runlatex.pl and runlatex.sh with error checks" width="560"}
 
 ## How I ran it
 
