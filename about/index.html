@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1467d80fe4a85ae7b6447036962995b9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-43e6e212697a7ef14b8d87ce46682f6a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9b73af9343b270078f4264fb763d4b52.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -152,31 +152,66 @@ ul.task-list li input[type="checkbox"] {
 <p>My background is a mix that shows up in my work: I studied biostatistics and statistics, with a minor in graphic design, and I’ve spent years writing production code, from clinical programming in R to complex Shiny architecture. I care as much about how an app looks and feels as about how it’s built. Data deserves better than dashboards that feel like chores.</p>
 </div>
 </div>
-<div class="work-on">
-<p><span class="mono-label">What I work on</span></p>
-<dl>
-<dt>shiny</dt>
-<dd>
-Modular apps, golem, bslib, R6
-</dd>
-<dt>js</dt>
-<dd>
-Custom htmlwidgets, JavaScript and D3
-</dd>
-<dt>ux</dt>
-<dd>
-User research, wireframes, prototypes, style guides
-</dd>
-<dt>css</dt>
-<dd>
-Custom HTML/CSS and branded, polished interfaces
-</dd>
-<dt>clinical</dt>
-<dd>
-CDISC, PK/PD, tables, listings and figures
-</dd>
-</dl>
+<div class="folder" id="work-on">
+  <p class="mono-label folder-label" id="work-on-label">What I work on</p>
+  <div class="folder-tabs" role="tablist" aria-labelledby="work-on-label">
+    <button type="button" role="tab" id="tab-shiny" aria-controls="panel-shiny" aria-selected="true" tabindex="0">shiny</button>
+    <button type="button" role="tab" id="tab-js" aria-controls="panel-js" aria-selected="false" tabindex="-1">js</button>
+    <button type="button" role="tab" id="tab-ux" aria-controls="panel-ux" aria-selected="false" tabindex="-1">ux</button>
+    <button type="button" role="tab" id="tab-css" aria-controls="panel-css" aria-selected="false" tabindex="-1">css</button>
+    <button type="button" role="tab" id="tab-clinical" aria-controls="panel-clinical" aria-selected="false" tabindex="-1">clinical</button>
+  </div>
+  <div class="folder-panel" role="tabpanel" id="panel-shiny" aria-labelledby="tab-shiny" tabindex="0">
+    <h3>R Shiny</h3>
+    <p>Modular apps, golem, bslib and R6, from the first wireframe to production.</p>
+    <p class="folder-seen"><span>See it in:</span> <a href="../work/report-generator/index.html">Report Slide Generator</a> · <a href="../work/app-refactor/index.html">Shiny App Health Check &amp; Refactor</a></p>
+  </div>
+  <div class="folder-panel" role="tabpanel" id="panel-js" aria-labelledby="tab-js" tabindex="0" hidden="">
+    <h3>JavaScript &amp; htmlwidgets</h3>
+    <p>Custom htmlwidgets, JavaScript and D3 for charts and tables that go beyond what R packages offer.</p>
+    <p class="folder-seen"><span>See it in:</span> <a href="../work/biomarker-explorer/index.html">Biomarker Explorer</a> · <a href="../work/handsome-table/index.html">Handsome Table</a></p>
+  </div>
+  <div class="folder-panel" role="tabpanel" id="panel-ux" aria-labelledby="tab-ux" tabindex="0" hidden="">
+    <h3>UI/UX design</h3>
+    <p>User research, wireframes, prototypes and style guides, designed in Figma and tested with real users.</p>
+    <p class="folder-seen"><span>See it in:</span> <a href="../talks/design-of-everyday-shiny-apps/index.html">Design of Everyday Shiny Apps</a> · <a href="../work/report-generator/index.html">Report Slide Generator</a></p>
+  </div>
+  <div class="folder-panel" role="tabpanel" id="panel-css" aria-labelledby="tab-css" tabindex="0" hidden="">
+    <h3>HTML &amp; CSS</h3>
+    <p>Custom HTML and CSS for branded, polished interfaces that feel like the client's own tools.</p>
+    <p class="folder-seen"><span>See it in:</span> <a href="../work/report-generator/index.html">Report Slide Generator</a> · <a href="../work/app-refactor/index.html">Shiny App Health Check &amp; Refactor</a></p>
+  </div>
+  <div class="folder-panel" role="tabpanel" id="panel-clinical" aria-labelledby="tab-clinical" tabindex="0" hidden="">
+    <h3>Clinical data</h3>
+    <p>CDISC, PK/PD, and tables, listings and figures, from my biostatistics and clinical programming background.</p>
+    <p class="folder-seen"><span>See it in:</span> <a href="../work/biomarker-explorer/index.html">Biomarker Explorer</a> · <a href="../work/app-refactor/index.html">Shiny App Health Check &amp; Refactor</a></p>
+  </div>
 </div>
+<script>
+(function () {
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('#work-on [role="tab"]'));
+  function select(tab, focus) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { select(tab, false); });
+    tab.addEventListener('keydown', function (e) {
+      var next = null;
+      if (e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
+      else if (e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (e.key === 'Home') next = tabs[0];
+      else if (e.key === 'End') next = tabs[tabs.length - 1];
+      if (next) { e.preventDefault(); select(next, true); }
+    });
+  });
+})();
+</script>
 <div class="dogs">
 <p><span class="mono-label"><span aria-hidden="true">//</span> off the clock</span></p>
 <section id="dogs-heading" class="level2">
