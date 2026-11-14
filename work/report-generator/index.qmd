@@ -41,7 +41,7 @@ Most people open a tool like this a few times a year, right before a deadline. S
 - **One toggle for defaults versus overrides.** A Module / Parameter switch sets styles for every plot of a type at once or for just the plot on screen. Clicking a category or a single plot in the slide list switches levels automatically.
 - **A Manage Slides dialog** for finishing touches in one place: filter the slide list, edit titles inline, include or exclude slides, combine several plots onto one slide (and split them apart again), and choose PNG, SVG or fully editable PowerPoint objects per slide.
 - **Global Settings** in a popover: pick each treatment group's color from a brand palette, once, for the whole deck.
-- **Save and reuse your work.** Export all your display settings to a small file and import it on the next data refresh, instead of restyling every plot again. A pre-filled metadata template lets teams set slide order and titles in Excel.
+- **Save and reuse, now easy to find.** The original app could already export display settings and import them on the next data refresh. I moved this into a Save Settings menu in the Configure footer, right where people finish styling, along with a pre-filled metadata template for setting slide order and titles in Excel.
 - **Clear feedback at every step**, from progress messages while slides build to friendly guardrails like "Select at least 2 slides to combine," so nothing fails silently.
 
 ## What I did
