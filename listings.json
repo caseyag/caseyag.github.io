@@ -1,14 +1,14 @@
 [
   {
-    "listing": "/talks/index.html",
+    "listing": "/index.html",
     "items": [
+      "/work/biomarker-explorer/index.html",
       "/talks/design-of-everyday-shiny-apps/index.html"
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/talks/index.html",
     "items": [
-      "/work/biomarker-explorer/index.html",
       "/talks/design-of-everyday-shiny-apps/index.html"
     ]
   },
@@ -17,6 +17,7 @@
     "items": [
       "/work/biomarker-explorer/index.html",
       "/work/report-generator/index.html",
+      "/work/app-refactor/index.html",
       "/work/handsome-table/index.html"
     ]
   }

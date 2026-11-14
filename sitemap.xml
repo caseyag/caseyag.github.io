@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://caseyag.github.io/work/report-generator/index.html</loc>
-    <lastmod>2026-11-14T20:18:37.436Z</lastmod>
+    <lastmod>2026-11-14T20:22:46.739Z</lastmod>
   </url>
   <url>
     <loc>https://caseyag.github.io/work/handsome-table/index.html</loc>
-    <lastmod>2026-11-14T20:18:37.432Z</lastmod>
+    <lastmod>2026-11-14T20:22:46.736Z</lastmod>
   </url>
   <url>
-    <loc>https://caseyag.github.io/talks/index.html</loc>
-    <lastmod>2026-11-14T20:18:37.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://caseyag.github.io/resume/index.html</loc>
-    <lastmod>2026-11-14T20:18:37.412Z</lastmod>
-  </url>
-  <url>
-    <loc>https://caseyag.github.io/index.html</loc>
-    <lastmod>2026-11-14T20:18:37.411Z</lastmod>
+    <loc>https://caseyag.github.io/work/app-refactor/index.html</loc>
+    <lastmod>2026-11-14T20:22:46.722Z</lastmod>
   </url>
   <url>
     <loc>https://caseyag.github.io/talks/design-of-everyday-shiny-apps/index.html</loc>
-    <lastmod>2026-11-14T20:18:37.414Z</lastmod>
+    <lastmod>2026-11-14T20:22:46.720Z</lastmod>
+  </url>
+  <url>
+    <loc>https://caseyag.github.io/index.html</loc>
+    <lastmod>2026-11-14T20:22:46.717Z</lastmod>
+  </url>
+  <url>
+    <loc>https://caseyag.github.io/resume/index.html</loc>
+    <lastmod>2026-11-14T20:22:46.719Z</lastmod>
+  </url>
+  <url>
+    <loc>https://caseyag.github.io/talks/index.html</loc>
+    <lastmod>2026-11-14T20:22:46.720Z</lastmod>
   </url>
   <url>
     <loc>https://caseyag.github.io/work/biomarker-explorer/index.html</loc>
-    <lastmod>2026-11-14T20:18:37.418Z</lastmod>
+    <lastmod>2026-11-14T20:22:46.723Z</lastmod>
   </url>
   <url>
     <loc>https://caseyag.github.io/work/index.html</loc>
-    <lastmod>2026-11-14T20:18:37.434Z</lastmod>
+    <lastmod>2026-11-14T20:22:46.737Z</lastmod>
   </url>
 </urlset>

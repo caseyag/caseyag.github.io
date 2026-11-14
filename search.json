@@ -70,60 +70,39 @@
     "text": "What’s next\n\nEditable cells with dropdown, date and checkbox column types\nTwo-way binding, so edits flow back to R\nValidation rules\nA package release with documentation and tests"
   },
   {
-    "objectID": "talks/index.html",
-    "href": "talks/index.html",
-    "title": "Talks",
+    "objectID": "work/app-refactor/index.html",
+    "href": "work/app-refactor/index.html",
+    "title": "Shiny App Health Check & Refactor",
     "section": "",
-    "text": "Design of Everyday Shiny Apps\n\n\n\ntalk\n\nux\n\nshiny\n\n\n\nOur talk from posit::conf(2025) and PHUSE (March 2026): a working client Shiny app, redesigned on stage through layout, color, typography and components.\n\n\n\nSeptember 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "A pharma client had a clinical reporting app that worked, but the whole thing lived in one file. I led a health check and refactor to make it maintainable, faster and ready for production."
   },
   {
-    "objectID": "resume/index.html#experience",
-    "href": "resume/index.html#experience",
-    "title": "Casey Aguilar-Gervase",
-    "section": "Experience",
-    "text": "Experience"
+    "objectID": "work/app-refactor/index.html#the-problem",
+    "href": "work/app-refactor/index.html#the-problem",
+    "title": "Shiny App Health Check & Refactor",
+    "section": "The problem",
+    "text": "The problem\nThe app was a single app_final.R: about 5,400 lines and 146 KB. Every change risked breaking something else, several core functions were slow, and the app only ran locally. The client needed it running in production on Posit Connect, with PDF reporting built in.\n\n\n\nOne monolithic file became seven feature modules and four utility files in a standard golem structure."
   },
   {
-    "objectID": "resume/index.html#skills",
-    "href": "resume/index.html#skills",
-    "title": "Casey Aguilar-Gervase",
-    "section": "Skills",
-    "text": "Skills\n\nshiny\n\nShiny, golem, bslib, R6, HTMLWidgets\n\nux\n\nUI/UX design, wireframes, prototypes\n\ncss\n\nHTML/CSS, D3, R Markdown, graphic design\n\ncode\n\nR (R6, functional programming), Git, Python basics\n\nclinical\n\nCDISC, PK/PD, TLFs"
+    "objectID": "work/app-refactor/index.html#what-i-did",
+    "href": "work/app-refactor/index.html#what-i-did",
+    "title": "Shiny App Health Check & Refactor",
+    "section": "What I did",
+    "text": "What I did\n\nHealth diagnostic and estimate. I reviewed the app end to end, mapped where the complexity lived, and gave the client a development estimate and a clear path forward.\nModularized the monolith. I split the single script into feature modules for projects, analysis plans, authors, templates, reports and an audit trail, plus utility files for data management, the database and shared helpers, all in a standard golem structure.\nRefreshed the UI. I redesigned the interface in Figma and rebuilt it in the new module structure.\nMade it faster. I streamlined and rewrote core functions for efficiency.\nPrepared it for production. I identified what had to change to move from a local app to Posit Connect, and prepared the app for that environment.\nGot PDF reporting working. I explored and implemented PharmTeX for LaTeX-based PDF reports, with wrapper scripts for both Windows and Linux so it ran locally and on the server."
   },
   {
-    "objectID": "resume/index.html#education",
-    "href": "resume/index.html#education",
-    "title": "Casey Aguilar-Gervase",
-    "section": "Education",
-    "text": "Education\nAmerican University, 2015 – 2019\nBiostatistics MS\nApplied Statistics BS, Graphic Design minor\nDivision I Women’s Lacrosse\nTeam Captain, 2017–2018 season"
+    "objectID": "work/app-refactor/index.html#how-i-ran-it",
+    "href": "work/app-refactor/index.html#how-i-ran-it",
+    "title": "Shiny App Health Check & Refactor",
+    "section": "How I ran it",
+    "text": "How I ran it\nI led the project day to day: clear documentation and timelines, regular updates to both the client and my own team, and a written trail of plans and decisions that kept everyone aligned and accountable."
   },
   {
-    "objectID": "resume/index.html#speaking",
-    "href": "resume/index.html#speaking",
-    "title": "Casey Aguilar-Gervase",
-    "section": "Speaking",
-    "text": "Speaking\nPHUSE, March 2026 · posit::conf(2025)\nDesign of Everyday Shiny Apps"
-  },
-  {
-    "objectID": "index.html#featured-heading",
-    "href": "index.html#featured-heading",
-    "title": "Casey Aguilar-Gervase",
-    "section": "Featured",
-    "text": "Featured\nAll work →"
-  },
-  {
-    "objectID": "index.html#about-heading",
-    "href": "index.html#about-heading",
-    "title": "Casey Aguilar-Gervase",
-    "section": "About",
-    "text": "About"
-  },
-  {
-    "objectID": "index.html#contact-heading",
-    "href": "index.html#contact-heading",
-    "title": "Casey Aguilar-Gervase",
-    "section": "Let’s talk about your project, team, or talk idea.",
-    "text": "Let’s talk about your project, team, or talk idea."
+    "objectID": "work/app-refactor/index.html#what-id-do-again",
+    "href": "work/app-refactor/index.html#what-id-do-again",
+    "title": "Shiny App Health Check & Refactor",
+    "section": "What I’d do again",
+    "text": "What I’d do again\n\nDig deep in the diagnostic. Hidden complexity surfaces early when the first review goes beyond the code.\nBuild in buffer time. New technical dependencies like PharmTeX bring unknowns that are hard to estimate.\nModularize early. The sooner an app is organized into modules, the cheaper every later change becomes."
   },
   {
     "objectID": "talks/design-of-everyday-shiny-apps/index.html",
@@ -168,6 +147,62 @@
     "text": "Code and apps\nThe original app and the redesigned version are in the talk repo. Each step of the talk has its own branch."
   },
   {
+    "objectID": "index.html#featured-heading",
+    "href": "index.html#featured-heading",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Featured",
+    "text": "Featured\nAll work →"
+  },
+  {
+    "objectID": "index.html#about-heading",
+    "href": "index.html#about-heading",
+    "title": "Casey Aguilar-Gervase",
+    "section": "About",
+    "text": "About"
+  },
+  {
+    "objectID": "index.html#contact-heading",
+    "href": "index.html#contact-heading",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Let’s talk about your project, team, or talk idea.",
+    "text": "Let’s talk about your project, team, or talk idea."
+  },
+  {
+    "objectID": "resume/index.html#experience",
+    "href": "resume/index.html#experience",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Experience",
+    "text": "Experience"
+  },
+  {
+    "objectID": "resume/index.html#skills",
+    "href": "resume/index.html#skills",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Skills",
+    "text": "Skills\n\nshiny\n\nShiny, golem, bslib, R6, HTMLWidgets\n\nux\n\nUI/UX design, wireframes, prototypes\n\ncss\n\nHTML/CSS, D3, R Markdown, graphic design\n\ncode\n\nR (R6, functional programming), Git, Python basics\n\nclinical\n\nCDISC, PK/PD, TLFs"
+  },
+  {
+    "objectID": "resume/index.html#education",
+    "href": "resume/index.html#education",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Education",
+    "text": "Education\nAmerican University, 2015 – 2019\nBiostatistics MS\nApplied Statistics BS, Graphic Design minor\nDivision I Women’s Lacrosse\nTeam Captain, 2017–2018 season"
+  },
+  {
+    "objectID": "resume/index.html#speaking",
+    "href": "resume/index.html#speaking",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Speaking",
+    "text": "Speaking\nPHUSE, March 2026 · posit::conf(2025)\nDesign of Everyday Shiny Apps"
+  },
+  {
+    "objectID": "talks/index.html",
+    "href": "talks/index.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Design of Everyday Shiny Apps\n\n\n\ntalk\n\nux\n\nshiny\n\n\n\nOur talk from posit::conf(2025) and PHUSE (March 2026): a working client Shiny app, redesigned on stage through layout, color, typography and components.\n\n\n\nSeptember 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "work/biomarker-explorer/index.html",
     "href": "work/biomarker-explorer/index.html",
     "title": "Biomarker Explorer",
@@ -207,6 +242,6 @@
     "href": "work/index.html",
     "title": "Work",
     "section": "",
-    "text": "Biomarker Explorer\n\n\n\nshiny\n\nhtmlwidgets\n\nd3\n\nux\n\n\n\nA cross-study biomarker app with ten custom D3 and Observable Plot htmlwidgets. The live demo runs on invented data.\n\n\n\n\n\n\n\n\n\n\n\n\nReport Slide Generator\n\n\n\nshiny\n\nhtmlwidgets\n\njavascript\n\nofficer\n\n\n\nA redesign of a client Shiny app that builds report PowerPoints: a new workflow, brand alignment and a live in-browser slide preview.\n\n\n\n\n\n\n\n\n\n\n\n\nHandsome Table\n\n\n\nhtmlwidgets\n\njavascript\n\npackage\n\n\n\nAn htmlwidget that brings Handsontable’s spreadsheet-style tables to R and Shiny. On its way to becoming an open-source package.\n\n\n\n\n\nNo matching items"
+    "text": "Biomarker Explorer\n\n\n\nshiny\n\nhtmlwidgets\n\nd3\n\nux\n\n\n\nA cross-study biomarker app with ten custom D3 and Observable Plot htmlwidgets. The live demo runs on invented data.\n\n\n\n\n\n\n\n\n\n\n\n\nReport Slide Generator\n\n\n\nshiny\n\nhtmlwidgets\n\njavascript\n\nofficer\n\n\n\nA redesign of a client Shiny app that builds report PowerPoints: a new workflow, brand alignment and a live in-browser slide preview.\n\n\n\n\n\n\n\n\n\n\n\n\nShiny App Health Check & Refactor\n\n\n\nshiny\n\ngolem\n\nrefactoring\n\nposit-connect\n\n\n\nA pharma client’s clinical reporting app, rescued from a 5,400-line app.R: modularized, sped up and made ready for production.\n\n\n\n\n\n\n\n\n\n\n\n\nHandsome Table\n\n\n\nhtmlwidgets\n\njavascript\n\npackage\n\n\n\nAn htmlwidget that brings Handsontable’s spreadsheet-style tables to R and Shiny. On its way to becoming an open-source package.\n\n\n\n\n\nNo matching items"
   }
 ]
