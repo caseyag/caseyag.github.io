@@ -1,0 +1,39 @@
+---
+title: "Shiny App Health Check & Refactor"
+description: "A pharma client's clinical reporting app, rescued from a 5,400-line app.R: modularized, sped up and made ready for production."
+order: 3
+image: thumbnail.png
+image-alt: "Before and after: one 146 KB app_final.R file, then twelve focused module and utility files"
+open-graph:
+  image-alt: "Before and after: one 146 KB app_final.R file, then twelve focused module and utility files"
+twitter-card:
+  image-alt: "Before and after: one 146 KB app_final.R file, then twelve focused module and utility files"
+categories: [shiny, golem, refactoring, posit-connect]
+---
+
+A pharma client had a clinical reporting app that worked, but the whole thing lived in one file. I led a health check and refactor to make it maintainable, faster and ready for production.
+
+## The problem
+
+The app was a single `app_final.R`: about 5,400 lines and 146 KB. Every change risked breaking something else, several core functions were slow, and the app only ran locally. The client needed it running in production on Posit Connect, with PDF reporting built in.
+
+![One monolithic file became seven feature modules and four utility files in a standard golem structure.](thumbnail.png){fig-alt="Before and after: one 146 KB app_final.R file, then twelve focused module and utility files"}
+
+## What I did
+
+- **Health diagnostic and estimate.** I reviewed the app end to end, mapped where the complexity lived, and gave the client a development estimate and a clear path forward.
+- **Modularized the monolith.** I split the single script into feature modules for projects, analysis plans, authors, templates, reports and an audit trail, plus utility files for data management, the database and shared helpers, all in a standard golem structure.
+- **Refreshed the UI.** I redesigned the interface in Figma and rebuilt it in the new module structure.
+- **Made it faster.** I streamlined and rewrote core functions for efficiency.
+- **Prepared it for production.** I identified what had to change to move from a local app to Posit Connect, and prepared the app for that environment.
+- **Got PDF reporting working.** I explored and implemented PharmTeX for LaTeX-based PDF reports, with wrapper scripts for both Windows and Linux so it ran locally and on the server.
+
+## How I ran it
+
+I led the project day to day: clear documentation and timelines, regular updates to both the client and my own team, and a written trail of plans and decisions that kept everyone aligned and accountable.
+
+## What I'd do again
+
+- **Dig deep in the diagnostic.** Hidden complexity surfaces early when the first review goes beyond the code.
+- **Build in buffer time.** New technical dependencies like PharmTeX bring unknowns that are hard to estimate.
+- **Modularize early.** The sooner an app is organized into modules, the cheaper every later change becomes.

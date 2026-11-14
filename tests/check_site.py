@@ -215,7 +215,7 @@ def assert_img_alts(html, name):
 @check
 def work_listing():
     html = page("work/index.html")
-    for slug in ("biomarker-explorer", "report-generator", "handsome-table"):
+    for slug in ("biomarker-explorer", "report-generator", "app-refactor", "handsome-table"):
         assert f"{slug}/index.html" in html, f"Work listing should link to {slug}"
     assert "thumbnail.png" in html, "Work listing should use the PNG thumbnail"
     assert_img_alts(html, "work/index.html")
