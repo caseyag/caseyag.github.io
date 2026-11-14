@@ -168,12 +168,12 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/caseyag"> <i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/caseyag" target="_blank"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/casey-aguilar-gervase/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://www.linkedin.com/in/casey-aguilar-gervase/" target="_blank"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -218,7 +218,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-categories="c2hpbnklMkNodG1sd2lkZ2V0cyUyQ2QzJTJDdXg=" data-listing-file-modified-sort="1794688081782" data-listing-reading-time-sort="2" data-listing-word-count-sort="271">
+<div class="g-col-1" data-index="0" data-categories="c2hpbnklMkNodG1sd2lkZ2V0cyUyQ2QzJTJDdXg=" data-listing-file-modified-sort="1794688284332" data-listing-reading-time-sort="2" data-listing-word-count-sort="271">
 <a href="../work/biomarker-explorer/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -245,7 +245,7 @@ Biomarker Explorer
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="c2hpbnklMkNodG1sd2lkZ2V0cyUyQ2phdmFzY3JpcHQlMkNvZmZpY2Vy" data-listing-file-modified-sort="1794688081803" data-listing-reading-time-sort="4" data-listing-word-count-sort="756">
+<div class="g-col-1" data-index="1" data-categories="c2hpbnklMkNodG1sd2lkZ2V0cyUyQ2phdmFzY3JpcHQlMkNvZmZpY2Vy" data-listing-file-modified-sort="1794688284353" data-listing-reading-time-sort="4" data-listing-word-count-sort="756">
 <a href="../work/report-generator/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -272,7 +272,7 @@ Report Slide Generator
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="c2hpbnklMkNnb2xlbSUyQ3JlZmFjdG9yaW5nJTJDcG9zaXQtY29ubmVjdA==" data-listing-file-modified-sort="1794688081776" data-listing-reading-time-sort="3" data-listing-word-count-sort="485">
+<div class="g-col-1" data-index="2" data-categories="c2hpbnklMkNnb2xlbSUyQ3JlZmFjdG9yaW5nJTJDcG9zaXQtY29ubmVjdA==" data-listing-file-modified-sort="1794688284325" data-listing-reading-time-sort="3" data-listing-word-count-sort="485">
 <a href="../work/app-refactor/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -299,7 +299,7 @@ Shiny App Health Check &amp; Refactor
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="aHRtbHdpZGdldHMlMkNqYXZhc2NyaXB0JTJDcGFja2FnZQ==" data-listing-file-modified-sort="1794688081799" data-listing-reading-time-sort="1" data-listing-word-count-sort="198">
+<div class="g-col-1" data-index="3" data-categories="aHRtbHdpZGdldHMlMkNqYXZhc2NyaXB0JTJDcGFja2FnZQ==" data-listing-file-modified-sort="1794688284349" data-listing-reading-time-sort="1" data-listing-word-count-sort="198">
 <a href="../work/handsome-table/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -393,7 +393,7 @@ Handsome Table
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/caseyag\.github\.io");
+        var filterRegex = new RegExp("^https?://caseyag\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -407,6 +407,11 @@ Handsome Table
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -737,13 +742,13 @@ Handsome Table
 </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/casey-aguilar-gervase/">
+    <a class="nav-link" href="https://www.linkedin.com/in/casey-aguilar-gervase/" target="_blank">
       <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
     </a>
   </li>  
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/caseyag">
+    <a class="nav-link" href="https://github.com/caseyag" target="_blank">
       <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
     </a>
