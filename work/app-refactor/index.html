@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1467d80fe4a85ae7b6447036962995b9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-454303380cf62cac851929fecc9b099a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-12109e8089ae9f5e2300c98ce3ef0b2f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -240,12 +240,15 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Made it faster.</strong> I streamlined and rewrote core functions for efficiency.</p></li>
 <li><p><strong>Took it to production.</strong> I worked out what had to change to move from a local app to Posit Connect, and deployed it there.</p></li>
 <li><p><strong>Got PDF reporting working on Posit Connect.</strong> I implemented PharmTeX for LaTeX-based PDF reports. The hardest part was the server: the TeX toolchain had to run inside Posit Connect, where paths and the environment differ from a local machine. I wrote wrapper scripts for Windows and Linux, and the Linux one detects where it’s running so the same app works locally and on Connect.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="pharmtex-wrapper.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="The Linux wrapper works out whether it’s running locally or on Posit Connect, points to the bundled TeX toolchain, and runs each compile step with a clear error if it fails."><img src="pharmtex-wrapper.png" class="img-fluid figure-img" alt="Bash script executex.sh that resolves the project root for dev or deployed environments, exports PharmTeX paths, and runs perltex, runlatex.pl and runlatex.sh with error checks" width="560"></a></p>
-<figcaption>The Linux wrapper works out whether it’s running locally or on Posit Connect, points to the bundled TeX toolchain, and runs each compile step with a clear error if it fails.</figcaption>
-</figure>
-</div></li>
+<details class="code-peek">
+<summary>
+<p>See the PharmTeX script</p>
+</summary>
+<p><img src="pharmtex-wrapper.png" alt="Bash script executex.sh that resolves the project root for local or Posit Connect environments, exports PharmTeX paths, and runs perltex, runlatex.pl and runlatex.sh with error checks" width="1183" height="1993" loading="lazy"></p>
+<p>
+</p><p>The Linux wrapper works out whether it’s running locally or on Posit Connect, points to the bundled TeX toolchain, and runs each compile step with a clear error if it fails.</p>
+<p></p>
+</details></li>
 </ul>
 </section>
 <section id="how-i-ran-it" class="level2">
