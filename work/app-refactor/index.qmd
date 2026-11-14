@@ -36,6 +36,10 @@ The same two screens in the original app and in my redesign. Click any screensho
 ![After: report setup on one page, with project details up top, studies and dosing groups side by side, and inline validation.](ui-after-report.png){fig-alt="Redesigned report screen with a project details summary, study and dosing group panels, and a form showing a required-field message"}
 :::
 
+## Designing with a tough brand kit
+
+The client's brand palette is mostly red, and red everywhere reads as alarm in an app people use for hours. I kept red as the main brand color but saved it for the things that matter: active tabs, primary buttons and required fields. White space and black text carry the rest of the layout, so the app feels calm and breathable while still clearly on brand. Where I could, I brought in the palette's lighter secondary blue for headers and selected rows, which softens the red without leaving the brand.
+
 ## What I did
 
 - **Health diagnostic and estimate.** I reviewed the app end to end, mapped where the complexity lived, and gave the client a development estimate and a clear path forward.
