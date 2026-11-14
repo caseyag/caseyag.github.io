@@ -89,6 +89,9 @@ My background is a mix that shows up in my work: I studied biostatistics and sta
 shiny
 : Modular apps, golem, bslib, R6
 
+js
+: Custom htmlwidgets, JavaScript and D3
+
 ux
 : User research, wireframes, prototypes, style guides
 
