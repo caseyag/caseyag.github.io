@@ -28,6 +28,13 @@
     "text": "How it works\nThe app is three steps, Upload → Configure → Preview & Export, with a progress indicator that is always visible.\n\n\n\nUpload: one CSV drives the whole deck.\n\n\n\n\n\nConfigure: pick a slide on the left, adjust its plot in the middle, and fine-tune the look on the right.\n\n\n\n\n\nEach figure type has its own controls. This is a waterfall plot.\n\n\n\n\n\nPreview & Export: the real PowerPoint, rendered in the browser before download."
   },
   {
+    "objectID": "work/report-generator/index.html#designed-for-first-time-users",
+    "href": "work/report-generator/index.html#designed-for-first-time-users",
+    "title": "Report Slide Generator",
+    "section": "Designed for first-time users",
+    "text": "Designed for first-time users\nMost people open a tool like this a few times a year, right before a deadline. So every screen explains itself, and nothing needs a manual:\n\nInfo tooltips (ⓘ) on every panel explain what each area does, including the one concept new users trip over: setting a default for a whole plot type versus overriding a single plot.\nOne toggle for defaults versus overrides. A Module / Parameter switch sets styles for every plot of a type at once or for just the plot on screen. Clicking a category or a single plot in the slide list switches levels automatically.\nA Manage Slides dialog for finishing touches in one place: filter the slide list, edit titles inline, include or exclude slides, combine several plots onto one slide (and split them apart again), and choose PNG, SVG or fully editable PowerPoint objects per slide.\nGlobal Settings in a popover: pick each treatment group’s color from a brand palette, once, for the whole deck.\nSave and reuse your work. Export all your display settings to a small file and import it on the next data refresh, instead of restyling every plot again. A pre-filled metadata template lets teams set slide order and titles in Excel.\nClear feedback at every step, from progress messages while slides build to friendly guardrails like “Select at least 2 slides to combine,” so nothing fails silently."
+  },
+  {
     "objectID": "work/report-generator/index.html#what-i-did",
     "href": "work/report-generator/index.html#what-i-did",
     "title": "Report Slide Generator",
