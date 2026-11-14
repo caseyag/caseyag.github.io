@@ -42,6 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-454303380cf62cac851929fecc9b099a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -131,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -169,9 +172,53 @@ ul.task-list li input[type="checkbox"] {
 <p>The app was a single <code>app_final.R</code>: about 5,400 lines and 146 KB. Every change risked breaking something else, several core functions were slow, and the app only ran locally. The client needed it running in production on Posit Connect, with PDF reporting built in.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="thumbnail.png" class="img-fluid figure-img" alt="Before and after: one 146 KB app_final.R file, then twelve focused module and utility files"></p>
+<p><a href="thumbnail.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="One monolithic file became seven feature modules and four utility files in a standard golem structure."><img src="thumbnail.png" class="img-fluid figure-img" alt="Before and after: one 146 KB app_final.R file, then twelve focused module and utility files"></a></p>
 <figcaption>One monolithic file became seven feature modules and four utility files in a standard golem structure.</figcaption>
 </figure>
+</div>
+</section>
+<section id="before-and-after" class="level2 page-columns page-full">
+<h2 data-anchor-id="before-and-after">Before and after</h2>
+<p>The same two screens in the original app and in my redesign. Click any screenshot to enlarge it. The app name and the client’s logo are blurred, and the data is test data.</p>
+<div class="column-page quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="ui-before-project.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Before: project setup in a dark dashboard, with instructions crammed into a side panel."><img src="ui-before-project.png" class="img-fluid figure-img" alt="Original app project screen with a dark sidebar, a red header and a plain form"></a></p>
+<figcaption>Before: project setup in a dark dashboard, with instructions crammed into a side panel.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="ui-after-project.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="After: project setup with clear tabs, a searchable project list and a tidy edit form."><img src="ui-after-project.png" class="img-fluid figure-img" alt="Redesigned project screen with Setup, Analysis Plan and Report tabs, a project table and an edit form"></a></p>
+<figcaption>After: project setup with clear tabs, a searchable project list and a tidy edit form.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="column-page quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="ui-before-report.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Before: report setup spread across nested sidebar menus."><img src="ui-before-report.png" class="img-fluid figure-img" alt="Original app report screen with study and dosing group tables and nested sidebar navigation"></a></p>
+<figcaption>Before: report setup spread across nested sidebar menus.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="ui-after-report.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="After: report setup on one page, with project details up top, studies and dosing groups side by side, and inline validation."><img src="ui-after-report.png" class="img-fluid figure-img" alt="Redesigned report screen with a project details summary, study and dosing group panels, and a form showing a required-field message"></a></p>
+<figcaption>After: report setup on one page, with project details up top, studies and dosing groups side by side, and inline validation.</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="what-i-did" class="level2">
@@ -181,7 +228,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Modularized the monolith.</strong> I split the single script into feature modules for projects, analysis plans, authors, templates, reports and an audit trail, plus utility files for data management, the database and shared helpers, all in a standard golem structure.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="module-files.png" class="img-fluid figure-img" alt="File list showing mod_analysis_plan.R, mod_authors.R, mod_project.R, mod_report.R, mod_audit_trail.R, mod_templates.R and utility files with their sizes" width="420"></p>
+<p><a href="module-files.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="The new app: focused modules and utilities, none larger than 35 KB, in place of one 146 KB file."><img src="module-files.png" class="img-fluid figure-img" alt="File list showing mod_analysis_plan.R, mod_authors.R, mod_project.R, mod_report.R, mod_audit_trail.R, mod_templates.R and utility files with their sizes" width="420"></a></p>
 <figcaption>The new app: focused modules and utilities, none larger than 35 KB, in place of one 146 KB file.</figcaption>
 </figure>
 </div></li>
@@ -191,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Got PDF reporting working on Posit Connect.</strong> I implemented PharmTeX for LaTeX-based PDF reports. The hardest part was the server: the TeX toolchain had to run inside Posit Connect, where paths and the environment differ from a local machine. I wrote wrapper scripts for Windows and Linux, and the Linux one detects where it’s running so the same app works locally and on Connect.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="pharmtex-wrapper.png" class="img-fluid figure-img" alt="Bash script executex.sh that resolves the project root for dev or deployed environments, exports PharmTeX paths, and runs perltex, runlatex.pl and runlatex.sh with error checks" width="560"></p>
+<p><a href="pharmtex-wrapper.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="The Linux wrapper works out whether it’s running locally or on Posit Connect, points to the bundled TeX toolchain, and runs each compile step with a clear error if it fails."><img src="pharmtex-wrapper.png" class="img-fluid figure-img" alt="Bash script executex.sh that resolves the project root for dev or deployed environments, exports PharmTeX paths, and runs perltex, runlatex.pl and runlatex.sh with error checks" width="560"></a></p>
 <figcaption>The Linux wrapper works out whether it’s running locally or on Posit Connect, points to the bundled TeX toolchain, and runs each compile step with a clear error if it fails.</figcaption>
 </figure>
 </div></li>
@@ -643,6 +690,38 @@ ul.task-list li input[type="checkbox"] {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

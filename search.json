@@ -84,6 +84,13 @@
     "text": "The problem\nThe app was a single app_final.R: about 5,400 lines and 146 KB. Every change risked breaking something else, several core functions were slow, and the app only ran locally. The client needed it running in production on Posit Connect, with PDF reporting built in.\n\n\n\nOne monolithic file became seven feature modules and four utility files in a standard golem structure."
   },
   {
+    "objectID": "work/app-refactor/index.html#before-and-after",
+    "href": "work/app-refactor/index.html#before-and-after",
+    "title": "Shiny App Health Check & Refactor",
+    "section": "Before and after",
+    "text": "Before and after\nThe same two screens in the original app and in my redesign. Click any screenshot to enlarge it. The app name and the client’s logo are blurred, and the data is test data.\n\n\n\n\n\n\nBefore: project setup in a dark dashboard, with instructions crammed into a side panel.\n\n\n\n\n\n\n\nAfter: project setup with clear tabs, a searchable project list and a tidy edit form.\n\n\n\n\n\n\n\n\n\n\n\nBefore: report setup spread across nested sidebar menus.\n\n\n\n\n\n\n\nAfter: report setup on one page, with project details up top, studies and dosing groups side by side, and inline validation."
+  },
+  {
     "objectID": "work/app-refactor/index.html#what-i-did",
     "href": "work/app-refactor/index.html#what-i-did",
     "title": "Shiny App Health Check & Refactor",
