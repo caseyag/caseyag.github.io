@@ -223,16 +223,16 @@ def work_listing():
     assert "https://caseya-g.shinyapps.io/biomarker-explorer/" in demo, "Biomarker Explorer should link to its live demo"
     table = page("work/handsome-table/index.html")
     assert 'src="demo/index.html"' in table, "Handsome Table should embed its live demo"
-    assert "../../talks/design-of-everyday-apps/index.html" in table, "Handsome Table should link to the talk"
+    assert "../../talks/design-of-everyday-shiny-apps/index.html" in table, "Handsome Table should link to the talk"
 
 
 @check
 def talks_listing():
     html = page("talks/index.html")
-    assert "design-of-everyday-apps/index.html" in html, "Talks listing should link to Design of Everyday Apps"
+    assert "design-of-everyday-shiny-apps/index.html" in html, "Talks listing should link to Design of Everyday Apps"
     assert "thumbnail.png" in html, "Talks listing should use the PNG thumbnail"
     assert_img_alts(html, "talks/index.html")
-    item = page("talks/design-of-everyday-apps/index.html")
+    item = page("talks/design-of-everyday-shiny-apps/index.html")
     assert "https://github.com/caseyag/Posit-Conf-25" in item, "talk page should link to the talk repo"
     assert "../../work/handsome-table/index.html" in item, "talk page should link to Handsome Table"
 

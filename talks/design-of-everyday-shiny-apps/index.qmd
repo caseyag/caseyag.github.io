@@ -3,6 +3,8 @@ title: "Design of Everyday Shiny Apps"
 subtitle: "posit::conf(2025) · PHUSE, March 2026"
 description: "Our talk from posit::conf(2025) and PHUSE (March 2026): a working client Shiny app, redesigned on stage through layout, color, typography and components."
 date: 2025-09-01
+aliases:
+  - ../design-of-everyday-apps/index.html
 image: thumbnail.png
 image-alt: "Before and after screenshots of the app redesign, side by side"
 categories: [talk, ux, shiny]
@@ -13,7 +15,7 @@ twitter-card:
   image-alt: "Before and after screenshots of the app redesign, side by side"
 ---
 
-We first gave this talk at posit::conf(2025) and presented it again at PHUSE in March 2026. In it, we take a working client Shiny app and rebuild it step by step, one design lever at a time.
+I gave this talk with [Maya Gans](https://github.com/MayaGans), first at posit::conf(2025) and again at PHUSE in March 2026. In it, we take a working client Shiny app and rebuild it step by step, one design lever at a time. Huge thanks to Maya, my co-presenter and co-builder on this one, and on [Handsome Table](../../work/handsome-table/index.qmd) too.
 
 ::: {.cta-row}
 [Watch on YouTube [↗]{aria-hidden="true"}](https://www.youtube.com/watch?v=RQod46DSkiA){.btn-cta}
