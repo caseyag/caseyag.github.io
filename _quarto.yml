@@ -35,9 +35,11 @@ website:
         href: "index.qmd#about"
       - icon: github
         href: https://github.com/caseyag
+        target: _blank
         aria-label: GitHub
       - icon: linkedin
         href: https://www.linkedin.com/in/casey-aguilar-gervase/
+        target: _blank
         aria-label: LinkedIn
   page-footer:
     left: "© 2026 Casey Aguilar-Gervase"
@@ -46,9 +48,11 @@ website:
         href: "mailto:97caguilar@gmail.com"
       - icon: linkedin
         href: https://www.linkedin.com/in/casey-aguilar-gervase/
+        target: _blank
         aria-label: LinkedIn
       - icon: github
         href: https://github.com/caseyag
+        target: _blank
         aria-label: GitHub
 
 format:
@@ -59,5 +63,7 @@ format:
     # and add `respect-user-color-scheme: true`.
     theme: [default, theme.scss, theme-rules.scss]
     toc: false
+    link-external-newwindow: true
+    link-external-filter: '^https?://caseyag\.github\.io'
     anchor-sections: false
     smooth-scroll: true
