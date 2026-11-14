@@ -1,6 +1,6 @@
 ---
-pagetitle: "Casey Aguilar-Gervase · Data Scientist & R Shiny Specialist"
-description: "Data deserves apps people actually want to use. Data scientist and R Shiny specialist in the Indianapolis area."
+pagetitle: "Casey Aguilar-Gervase · Data Scientist, R Shiny Specialist & UI/UX Designer"
+description: "Data deserves apps people actually want to use. Data scientist, R Shiny specialist and UI/UX designer in the Indianapolis area."
 page-layout: custom
 ---
 
@@ -8,7 +8,7 @@ page-layout: custom
 
 ::: {.hero}
 ::: {.wrap}
-[[//]{aria-hidden="true"} Casey Aguilar-Gervase · Data Scientist & R Shiny Specialist]{.mono-label}
+[[//]{aria-hidden="true"} Casey Aguilar-Gervase · Data Scientist, R Shiny Specialist & UI/UX Designer]{.mono-label}
 
 # Data deserves apps people [actually]{.hl} want to use. {#hero-heading}
 

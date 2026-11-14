@@ -1,6 +1,6 @@
 ---
 pagetitle: "Resume · Casey Aguilar-Gervase"
-description: "Resume of Casey Aguilar-Gervase, data scientist and R Shiny specialist."
+description: "Resume of Casey Aguilar-Gervase, data scientist, R Shiny specialist and UI/UX designer."
 page-layout: custom
 ---
 
@@ -13,7 +13,7 @@ page-layout: custom
 
 # Casey Aguilar-Gervase
 
-[Data Scientist & R Shiny Specialist]{.resume-title}
+[Data Scientist, R Shiny Specialist & UI/UX Designer]{.resume-title}
 
 [Indianapolis, IN · [97caguilar@gmail.com](mailto:97caguilar@gmail.com) · [LinkedIn [↗]{aria-hidden="true"}](https://www.linkedin.com/in/casey-aguilar-gervase/)]{.mono-label}
 :::

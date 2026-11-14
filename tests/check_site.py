@@ -252,7 +252,7 @@ def home_hero():
     html = page("index.html")
     assert "Data deserves apps people" in html, "hero headline missing"
     assert '<span class="hl">actually</span>' in html, "'actually' should carry the highlighter class"
-    assert "Data Scientist &amp; R Shiny Specialist" in html, "hero label missing"
+    assert "Data Scientist, R Shiny Specialist &amp; UI/UX Designer" in html, "hero label missing"
 
 
 @check
@@ -412,7 +412,7 @@ def social_metas(html):
     return metas
 
 
-SITE_WIDE_ALT = "Casey Aguilar-Gervase, Data Scientist & R Shiny Specialist"
+SITE_WIDE_ALT = "Casey Aguilar-Gervase, Data Scientist, R Shiny Specialist & UI/UX Designer"
 
 
 @check

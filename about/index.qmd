@@ -12,7 +12,7 @@ page-layout: custom
 
 # Hi, I'm Casey. {#about-title}
 
-[Data Scientist & R Shiny Specialist · Indianapolis area]{.resume-title}
+[Data Scientist, R Shiny Specialist & UI/UX Designer · Indianapolis area]{.resume-title}
 :::
 :::
 

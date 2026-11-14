@@ -13,15 +13,15 @@ project:
 website:
   title: "Casey Aguilar-Gervase"
   site-url: "https://caseyag.github.io"
-  description: "Data scientist and R Shiny specialist. Data deserves apps people actually want to use."
+  description: "Data scientist, R Shiny specialist and UI/UX designer. Data deserves apps people actually want to use."
   search: false
   open-graph:
     image: /images/social-card.png
-    image-alt: "Casey Aguilar-Gervase, Data Scientist & R Shiny Specialist"
+    image-alt: "Casey Aguilar-Gervase, Data Scientist, R Shiny Specialist & UI/UX Designer"
   twitter-card:
     card-style: summary_large_image
     image: /images/social-card.png
-    image-alt: "Casey Aguilar-Gervase, Data Scientist & R Shiny Specialist"
+    image-alt: "Casey Aguilar-Gervase, Data Scientist, R Shiny Specialist & UI/UX Designer"
   navbar:
     title: "caseyag"
     right:
