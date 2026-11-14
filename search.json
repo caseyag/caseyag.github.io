@@ -161,15 +161,22 @@
     "text": "Code and apps\nThe original app and the redesigned version are in the talk repo. Each step of the talk has its own branch."
   },
   {
-    "objectID": "index.html#about-heading",
-    "href": "index.html#about-heading",
-    "title": "Casey Aguilar-Gervase",
-    "section": "About",
-    "text": "About"
-  },
-  {
     "objectID": "index.html#contact-heading",
     "href": "index.html#contact-heading",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Let’s talk about your project, team, or talk idea.",
+    "text": "Let’s talk about your project, team, or talk idea."
+  },
+  {
+    "objectID": "about/index.html#dogs-heading",
+    "href": "about/index.html#dogs-heading",
+    "title": "Casey Aguilar-Gervase",
+    "section": "Meet my coworkers",
+    "text": "Meet my coworkers\nMason and Tony work behind the scenes on every project. They attend all my meetings and sleep through most of them.\n\n  \n    \n    Mason reviews my code from very close range.\n  \n  \n    \n    Tony supervises every project, DIY and professional.\n  \n  \n    \n    The whole team, out for a sunset walk."
+  },
+  {
+    "objectID": "about/index.html#contact-heading",
+    "href": "about/index.html#contact-heading",
     "title": "Casey Aguilar-Gervase",
     "section": "Let’s talk about your project, team, or talk idea.",
     "text": "Let’s talk about your project, team, or talk idea."
