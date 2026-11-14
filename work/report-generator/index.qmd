@@ -33,6 +33,17 @@ The app is three steps, **Upload → Configure → Preview & Export**, with a pr
 
 ![Preview & Export: the real PowerPoint, rendered in the browser before download.](05-pptx-preview-line-slide.png){fig-alt="Preview step with a slide list and a blurred slide preview"}
 
+## Designed for first-time users
+
+Most people open a tool like this a few times a year, right before a deadline. So every screen explains itself, and nothing needs a manual:
+
+- **Info tooltips (ⓘ) on every panel** explain what each area does, including the one concept new users trip over: setting a default for a whole plot type versus overriding a single plot.
+- **One toggle for defaults versus overrides.** A Module / Parameter switch sets styles for every plot of a type at once or for just the plot on screen. Clicking a category or a single plot in the slide list switches levels automatically.
+- **A Manage Slides dialog** for finishing touches in one place: filter the slide list, edit titles inline, include or exclude slides, combine several plots onto one slide (and split them apart again), and choose PNG, SVG or fully editable PowerPoint objects per slide.
+- **Global Settings** in a popover: pick each treatment group's color from a brand palette, once, for the whole deck.
+- **Save and reuse your work.** Export all your display settings to a small file and import it on the next data refresh, instead of restyling every plot again. A pre-filled metadata template lets teams set slide order and titles in Excel.
+- **Clear feedback at every step**, from progress messages while slides build to friendly guardrails like "Select at least 2 slides to combine," so nothing fails silently.
+
 ## What I did
 
 - **A live PowerPoint preview widget.** This was the biggest piece. I built a custom htmlwidget so users see the real deck before they download it: officer builds the .pptx on the server and sends the file to the browser. There, the open-source JavaScript library [pptx-renderer](https://github.com/aiden0z/pptx-renderer) (`@aiden0z/pptx-renderer`) draws each slide as HTML and SVG, and [SortableJS](https://sortablejs.github.io/Sortable/) lets users drag slides into a new order. The preview and the download use the same file, so they can't drift apart, and users can review the deck, go back to adjust a slide and check it again without ever leaving the app.
