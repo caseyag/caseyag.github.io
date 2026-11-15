@@ -1,6 +1,6 @@
 ---
 title: "Handsome Table"
-description: "An htmlwidget that brings Handsontable's spreadsheet-style tables to R and Shiny. On its way to becoming an open-source package."
+description: "An htmlwidget that brings Handsontable's spreadsheet-style tables to R and Shiny. I'm working on turning it into an open-source package, with no release date yet."
 order: 4
 image: thumbnail.png
 image-alt: "Handsome Table showing made-up project data with an expanded note"
