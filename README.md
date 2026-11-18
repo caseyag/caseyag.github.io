@@ -1,6 +1,6 @@
 # caseyag.github.io
 
-Casey Aguilar-Gervase's portfolio site, built with [Quarto](https://quarto.org) and published to https://caseyag.github.io.
+Casey Aguilar-Gervase's portfolio site, built with [Quarto](https://quarto.org) and published to https://caseyag.co (custom domain; https://caseyag.github.io redirects there). The `CNAME` file keeps the domain set on every publish, so don't delete it.
 
 ## Preview locally
 

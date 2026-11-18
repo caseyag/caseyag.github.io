@@ -9,10 +9,11 @@ project:
     - "resume/*.pdf"
     - "images/*"
     - "work/*/demo/**"
+    - "CNAME"
 
 website:
   title: "Casey Aguilar-Gervase"
-  site-url: "https://caseyag.github.io"
+  site-url: "https://caseyag.co"
   description: "Data scientist, R Shiny specialist and UI/UX designer. Data deserves apps people actually want to use."
   search: false
   open-graph:
@@ -64,6 +65,6 @@ format:
     theme: [default, theme.scss, theme-rules.scss]
     toc: false
     link-external-newwindow: true
-    link-external-filter: '^https?://caseyag\.github\.io'
+    link-external-filter: '^https?://(caseyag\.co|caseyag\.github\.io)'
     anchor-sections: false
     smooth-scroll: true

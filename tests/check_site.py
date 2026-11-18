@@ -417,7 +417,7 @@ SITE_WIDE_ALT = "Casey Aguilar-Gervase, Data Scientist, R Shiny Specialist & UI/
 
 @check
 def open_graph():
-    site_url = "https://caseyag.github.io/"
+    site_url = "https://caseyag.co/"
     for rel in ("index.html", "about/index.html", "work/index.html", "talks/index.html", "resume/index.html"):
         metas = social_metas(page(rel))
         for prop in ("og:title", "og:description", "og:image", "og:image:alt"):
@@ -452,6 +452,13 @@ def light_only():
     # Dark mode is off for now; see the comment in _quarto.yml to re-enable it.
     assert not list((SITE / "site_libs" / "bootstrap").glob("bootstrap-dark*.css")), "dark theme CSS is being built"
     assert "quarto-color-scheme-toggle" not in page("index.html"), "navbar still has a light/dark toggle"
+
+
+@check
+def custom_domain():
+    cname = SITE / "CNAME"
+    assert cname.exists(), "CNAME missing from _site; GitHub Pages would drop the custom domain"
+    assert cname.read_text().strip() == "caseyag.co", "CNAME should contain caseyag.co"
 
 
 # --- runner (keep at the bottom; add new checks above this line) ----------
