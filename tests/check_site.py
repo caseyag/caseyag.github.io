@@ -352,7 +352,7 @@ APPROVED_RESUME_SHA256 = "a56c8cf65c7e981211baeaf93fdc086154c2b337af5fea029de9a6
 def resume_page():
     html = page("resume/index.html")
     for title in (
-        "Data Scientist (Contractor)",
+        "Kardigan",
         "Principal Shiny Developer",
         "Senior Shiny Developer",
         "Data Visualization Engineer / Data Scientist",

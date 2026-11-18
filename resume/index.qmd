@@ -31,10 +31,10 @@ page-layout: custom
 ::: {.role-meta}
 2026 – Present
 
-**Contract**
+**Kardigan**
 :::
 ::: {.role-body}
-### Data Scientist (Contractor)
+### Data Scientist
 :::
 :::
 
