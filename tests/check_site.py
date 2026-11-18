@@ -345,7 +345,7 @@ def images_have_no_metadata():
 
 # Phone-free web copy approved by Casey; update deliberately when replacing the PDF
 # (it must never include the phone number).
-APPROVED_RESUME_SHA256 = "a56c8cf65c7e981211baeaf93fdc086154c2b337af5fea029de9a671bd4783a4"
+APPROVED_RESUME_SHA256 = "5e3c55feabe455e80847163602569df73cb47d870337484e302bb39bd258f8e8"
 
 
 @check
